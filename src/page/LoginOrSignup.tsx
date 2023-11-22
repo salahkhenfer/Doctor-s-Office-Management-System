@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 import wink from "../assets/wink.png";
 import card from "../assets/card review.png";
@@ -13,11 +13,10 @@ import Verification from "../components/LoginAndRegister/Verification";
 import SignUp from "../components/LoginAndRegister/SignUp";
 
 import { selectUser } from "../Redux/reducer";
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 
 function LoginOrSginin() {
-  const { registerPage } = useSelector(selectUser);
-  const dispatch = useDispatch();
+  const registerPage = useSelector(selectUser);
   const [userState, setUserState] = useState(<SignUp />);
   console.log(registerPage);
   useEffect(() => {

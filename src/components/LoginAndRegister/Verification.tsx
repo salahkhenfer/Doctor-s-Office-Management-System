@@ -1,7 +1,6 @@
 import React, { useState, useRef } from "react";
 import message from "../../assets/message.png";
-import { FaGoogle } from "react-icons/fa";
-import { FaFacebookF } from "react-icons/fa";
+
 import { useDispatch } from "react-redux";
 import { ForgetPassword } from "../../Redux/reducer";
 
@@ -11,7 +10,7 @@ function Verification() {
   const [inputValues, setInputValues] = useState(Array(6).fill(""));
   const inputRefs = useRef(Array(6).fill(null));
 
-  const handleInputChange = (index, value) => {
+  const handleInputChange = (index: number, value: string) => {
     const newInputValues = [...inputValues];
     newInputValues[index] = value;
     setInputValues(newInputValues);
@@ -22,7 +21,7 @@ function Verification() {
     }
   };
 
-  const handleKeyDown = (index, e) => {
+  const handleKeyDown = (index: number, e: React.KeyboardEvent<HTMLInputElement>) => {
     // Move to the previous input on backspace
     if (e.key === "Backspace" && index > 0 && !inputValues[index]) {
       inputRefs.current[index - 1].focus();
@@ -47,7 +46,7 @@ function Verification() {
                 key={index}
                 ref={(el) => (inputRefs.current[index] = el)}
                 type="tel"
-                maxLength="1"
+              
                 pattern="[0-9]"
                 className="form-control"
                 value={value}

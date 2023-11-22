@@ -1,7 +1,6 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import hello from "../../assets/hello.png";
-import { FaGoogle } from "react-icons/fa";
-import { FaFacebookF } from "react-icons/fa";
+
 import { useDispatch } from "react-redux";
 import { Login, Verification } from "../../Redux/reducer";
 

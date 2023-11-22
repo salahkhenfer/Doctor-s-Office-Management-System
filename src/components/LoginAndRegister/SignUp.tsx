@@ -1,4 +1,4 @@
-import React from "react";
+
 import hello from "../../assets/hello.png";
 import { FaGoogle } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";

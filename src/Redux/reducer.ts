@@ -34,7 +34,7 @@ export const userSlice = createSlice({
     },
   },
 });
-export const selectUser = (state) => state.user;
+export const selectUser = (state: { user: unknown }) => state.user;
 
 // Action creators are generated for each case reducer function
 export const {

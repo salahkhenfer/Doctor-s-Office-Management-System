@@ -2,8 +2,12 @@ import React, { useState, useRef } from "react";
 import message from "../../assets/message.png";
 import { FaGoogle } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
+import { useDispatch } from "react-redux";
+import { ForgetPassword } from "../../Redux/reducer";
 
 function Verification() {
+  const dispatch = useDispatch();
+
   const [inputValues, setInputValues] = useState(Array(6).fill(""));
   const inputRefs = useRef(Array(6).fill(null));
 
@@ -54,16 +58,10 @@ function Verification() {
           </div>
         </form>
 
-        <div className="AgreeLogin">
-          <div className="checkboxAgree">
-            <input type="checkbox" name="checkboxAgree" />
-            <div className="textAgree">Remember me</div>
-          </div>
-          <div className="Forget-passwod">Forget password</div>
-        </div>
         <button className="button-signup">Sign Up</button>
         <div className="accountText">
-          Didn’t receive verification code? <span>Resend</span>
+          Didn’t receive verification code?{" "}
+          <span onClick={() => dispatch(ForgetPassword())}>Resend</span>
         </div>
       </div>
     </div>

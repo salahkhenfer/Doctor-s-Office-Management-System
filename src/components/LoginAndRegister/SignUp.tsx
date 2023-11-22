@@ -3,7 +3,11 @@ import hello from "../../assets/hello.png";
 import { FaGoogle } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
 import "../../page/LoginOrSignup";
+import { Login } from "../../Redux/reducer";
+import { useDispatch } from "react-redux";
+
 function SignUp() {
+  const dispatch = useDispatch();
   return (
     <div className="ContainerForm">
       <div className="loginForm">
@@ -40,7 +44,9 @@ function SignUp() {
             <span> condition</span>
           </div>
         </div>
-        <button className="button-signup">Sign Up</button>
+        <button onClick={() => dispatch(Login())} className="button-signup">
+          Sign Up
+        </button>
         <div className="or">or</div>
         <button className="SinInButton">
           <FaGoogle className="sinIn-icon" /> <div>Sign Up with google</div>
@@ -50,7 +56,8 @@ function SignUp() {
           <div>Sign Up with facebook</div>
         </button>
         <div className="accountText">
-          You Already have account ? <span>Sign in</span>
+          You Already have account ?{" "}
+          <span onClick={() => dispatch(Login())}>Sign in</span>
         </div>
       </div>
     </div>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 import wink from "../assets/wink.png";
 import card from "../assets/card review.png";
@@ -12,11 +12,31 @@ import ForgetPassword from "../components/LoginAndRegister/ForgetPassword";
 import Verification from "../components/LoginAndRegister/Verification";
 import SignUp from "../components/LoginAndRegister/SignUp";
 
+import { selectUser } from "../Redux/reducer";
+import { useDispatch, useSelector } from "react-redux";
+
 function LoginOrSginin() {
+  const { registerPage } = useSelector(selectUser);
+  const dispatch = useDispatch();
+  const [userState, setUserState] = useState(<SignUp />);
+  console.log(registerPage);
+  useEffect(() => {
+    if (registerPage === "Login") {
+      setUserState(<Login />);
+    } else if (registerPage === "ForgetPassword") {
+      setUserState(<ForgetPassword />);
+    } else if (registerPage === "SignUp") {
+      setUserState(<SignUp />);
+    } else if (registerPage === "Verification") {
+      setUserState(<Verification />);
+    }
+  }, [registerPage]);
+
   return (
     <div className="page-login">
       <div className="containerLogin ">
-        <SignUp />
+        {userState}
+
         <div className="photo-right">
           <div className="photo-container">
             <div className="title-img">

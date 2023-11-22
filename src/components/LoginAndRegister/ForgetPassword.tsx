@@ -1,9 +1,32 @@
-import React from "react";
-
+import React, { useState } from "react";
 import hello from "../../assets/hello.png";
 import { FaGoogle } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
+import { useDispatch } from "react-redux";
+import { Login, Verification } from "../../Redux/reducer";
+
 function ForgetPassword() {
+  const dispatch = useDispatch();
+  const [email, setEmail] = useState("");
+  const [emailError, setEmailError] = useState("");
+
+  const validateEmail = () => {
+    // Simple email validation logic, you can customize this according to your requirements
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!email || !emailRegex.test(email)) {
+      setEmailError("Please enter a valid email address");
+      return false;
+    }
+    setEmailError("");
+    return true;
+  };
+
+  const handleSendVerification = () => {
+    if (validateEmail()) {
+      dispatch(Verification());
+    }
+  };
+
   return (
     <div className="ContainerForm">
       <div className="loginForm">
@@ -17,17 +40,23 @@ function ForgetPassword() {
 
         <div className="input">
           <div className="TitleOfInput">Email</div>
-          <input type="email" id="Email" placeholder="Enter Your Email here" />
+          <input
+            type="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            id="Email"
+            placeholder="Enter Your Email here"
+          />
+          {emailError && <div className="error">{emailError}</div>}
         </div>
 
-        <div className="AgreeLogin">
-          <div className="checkboxAgree">
-            <input type="checkbox" name="checkboxAgree" />
-            <div className="textAgree">Remember me</div>
-          </div>
-          <div className="Forget-passwod">Forget password</div>
+        <button onClick={handleSendVerification} className="button-signup">
+          Send Message
+        </button>
+        <div className="accountText">
+          You Already have account ?{" "}
+          <span onClick={() => dispatch(Login())}>Login</span>
         </div>
-        <button className="button-signup">Sign Up</button>
       </div>
     </div>
   );

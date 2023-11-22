@@ -1,7 +1,10 @@
 import hello from "../../assets/hello.png";
 import { FaGoogle } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
+import { useDispatch } from "react-redux";
+import { ForgetPassword, SignUp } from "../../Redux/reducer";
 function Login() {
+  const dispatch = useDispatch();
   return (
     <div className="ContainerForm">
       <div className="loginForm">
@@ -33,7 +36,12 @@ function Login() {
             />
             <div className="textAgree">Remember me</div>
           </div>
-          <div className="Forget-passwod">Forget password</div>
+          <div
+            onClick={() => dispatch(ForgetPassword())}
+            className="Forget-passwod"
+          >
+            Forget password
+          </div>
         </div>
         <button className="button-signup">Sign Up</button>
         <div className="or">or</div>
@@ -45,7 +53,8 @@ function Login() {
           <div>Sign Up with facebook</div>
         </button>
         <div className="accountText">
-          You Already have account ? <span>Sign in</span>
+          You Already have account ?{" "}
+          <span onClick={() => dispatch(SignUp())}>Sign in</span>
         </div>
       </div>
     </div>

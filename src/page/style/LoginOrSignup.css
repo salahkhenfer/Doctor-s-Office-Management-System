@@ -1,0 +1,357 @@
+.page-login {
+  height: 110vh;
+  width: 100vw;
+}
+.containerLogin {
+  /* width: 1300px; */
+  /* height: 100vh; */
+  margin: 0 auto;
+  background-color: #fff;
+  display: flex;
+}
+.containerLogin .loginForm {
+  padding-top: 10px;
+  width: 60%;
+  height: 100vh;
+  margin: auto;
+}
+.containerLogin .ContainerForm {
+  padding-top: 10px;
+  width: 50%;
+  height: 80%;
+}
+.SingUpTitle {
+  color: #000000;
+  font-size: 22px;
+  font-family: Poppins;
+  font-weight: 600;
+  letter-spacing: 0.16px;
+  display: flex;
+  margin: 5px 0;
+}
+.SignUpDic span {
+  font-family: Poppins;
+  font-weight: 700;
+}
+.SingUpTitle img {
+  width: 30;
+  height: 30px;
+  margin: 0 10px;
+  flex-shrink: 0;
+}
+.SignUpDic {
+  color: #848fac;
+  font-size: 14px;
+  font-family: Poppins;
+  font-weight: 400;
+  letter-spacing: 0.07px;
+  margin-bottom: 40px;
+}
+.input {
+  color: #000000;
+  width: 100%;
+  height: fit-content;
+  font-weight: 600;
+  margin: 20px 0;
+}
+
+.input .TitleOfInput {
+  float: left;
+  margin-bottom: 7px;
+  margin-left: 5px;
+  font-size: 12px;
+}
+.input input {
+  color: #000000;
+  border-radius: 8px;
+  background-color: transparent;
+  border: 1px solid #c5d0e6;
+  width: 100%;
+  height: 38px;
+  flex-shrink: 0;
+  padding-left: 10px;
+  color: #c5d0e6;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.07px;
+}
+.input input::placeholder {
+  color: #c5d0e6;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.input input:focus {
+  outline: none;
+}
+
+.Agree {
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+}
+.Forget-passwod {
+  color: #192252;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.06px;
+}
+.AgreeLogin {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.AgreeLogin div {
+  display: flex;
+}
+
+.checkboxAgree input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  border: 1px solid #dfe8f6;
+  margin-right: 10px;
+  background-color: transparent;
+}
+
+.checkboxAgree input[type="checkbox"]:checked {
+  background-color: transparent; /* Replace with the color you want */
+}
+
+.textAgree {
+  color: #192252;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.06px;
+}
+.textAgree span {
+  font-family: Poppins;
+  font-weight: 700;
+}
+.button-signup {
+  margin: 0 10px 0 0;
+  width: 100%;
+  height: 40px;
+  border-radius: 8px;
+  background: #103f74;
+  margin: 25px 0;
+}
+.or {
+  color: #2b2b36;
+  margin: 10px 0;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.07px;
+  text-align: center;
+}
+.SinInButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 38px;
+  border-radius: 8px;
+  border: 1px solid #c5d0e6;
+  z-index: -1;
+  color: #000000;
+  background-color: #fff;
+  color: #000;
+
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.06px;
+  margin: 0 0 10px 0;
+}
+.sinIn-icon {
+  color: #000000;
+  width: 18px;
+  height: 18px;
+  margin: 10px;
+}
+.accountText {
+  color: #000;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.06px;
+  text-align: center;
+  margin: 20px 0;
+  padding-bottom: 30px;
+}
+.accountText span {
+  color: #000;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.06px;
+}
+
+.photo-right {
+  width: 50%;
+  height: 120vh;
+  position: relative;
+  overflow: hidden;
+  background-color: #56ccf2;
+}
+.photo-container {
+  width: 90%;
+  height: 100vh;
+  padding: 10px;
+}
+
+.title-img {
+  text-align: center;
+  padding-top: 5%;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title-img img {
+  width: 30px;
+  height: 30px;
+  padding: 10px;
+  text-align: center;
+}
+.dicOfImage {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  /* position: absolute; */
+}
+.dicOfImage div {
+  width: 70%;
+  height: 60%;
+  padding: 10px;
+  text-align: center;
+}
+
+.img-review .down {
+  position: absolute;
+  width: 410px;
+  height: 143px;
+  left: 20%;
+  top: 20%;
+}
+.img-review .up {
+  position: absolute;
+  width: 410px;
+  height: 143px;
+  left: 66%;
+  top: 27%;
+}
+
+.persons {
+  display: flex;
+}
+.person1 {
+  display: flex;
+  position: absolute;
+  width: 87%;
+  height: 65%;
+  top: 35%;
+  left: 10%;
+}
+.person2 {
+  display: flex;
+  position: absolute;
+  width: 62%;
+  height: 47%;
+  top: 55%;
+  left: 41%;
+}
+.person3 {
+  position: absolute;
+  display: flex;
+  width: 59%;
+  height: 43%;
+  top: 58%;
+  left: 0%;
+}
+/* ================== */
+
+form {
+  padding: 2rem;
+  border-radius: 4px;
+  max-width: 400px;
+  background: #fff;
+}
+.inputs {
+  display: flex;
+}
+.form-control {
+  display: block;
+  height: 50px;
+  margin-right: 0.5rem;
+  text-align: center;
+  font-size: 1.25rem;
+  min-width: 0;
+  background-color: transparent;
+  border: 1px #c5d0e6 solid;
+  width: 54px;
+  height: 54px;
+  border-radius: 8px;
+  color: #000000;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.inputs input::placeholder {
+  outline: none;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-control:last-child {
+  margin-right: 0;
+}
+/* ================== */
+
+@media screen and (min-width: 1400px) {
+  .containerLogin {
+    width: 1300px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .photo-right {
+    display: none;
+  }
+
+  .containerLogin .loginForm {
+    padding-top: 10px;
+    width: 100%;
+    height: 100vh;
+  }
+  .containerLogin .ContainerForm {
+    padding-top: 10px;
+    width: 90%;
+    height: 80%;
+    margin: auto;
+    margin-top: 40px;
+  }
+}

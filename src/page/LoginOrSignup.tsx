@@ -16,7 +16,7 @@ import { selectUser } from "../Redux/reducer";
 import { useSelector } from "react-redux";
 
 function LoginOrSginin() {
-  const registerPage = useSelector(selectUser);
+  const { registerPage } = useSelector(selectUser);
   const [userState, setUserState] = useState(<SignUp />);
   console.log(registerPage);
   useEffect(() => {

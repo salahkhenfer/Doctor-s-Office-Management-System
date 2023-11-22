@@ -46,7 +46,6 @@ function Verification() {
                 key={index}
                 ref={(el) => (inputRefs.current[index] = el)}
                 type="tel"
-              
                 pattern="[0-9]"
                 className="form-control"
                 value={value}

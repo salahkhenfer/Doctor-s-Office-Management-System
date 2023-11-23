@@ -11,11 +11,6 @@ import Activity from "../assets/Activity.png";
 import Calendar from "../assets/Calendar.png";
 import { Link, Outlet, useLocation } from "react-router-dom";
 import { useEffect } from "react";
-const linkStyle = {
-  margin: "1rem",
-  textDecoration: "none",
-  color: "blue",
-};
 
 function HeaderAndMenu() {
   const location = useLocation();

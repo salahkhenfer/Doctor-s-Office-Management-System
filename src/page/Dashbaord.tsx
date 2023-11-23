@@ -1,9 +1,8 @@
-import React, { useEffect } from "react";
 import Chart from "../components/Dashbaord/Chart";
 import "./style/Dashbaord.css";
 import Calendar from "../components/Dashbaord/Calendar";
 import ListOfMedicalHistory from "../components/Dashbaord/ListOfMedicalHistory";
-import { FaDAndD } from "react-icons/fa";
+
 function Dashbaord() {
   return (
     <div>

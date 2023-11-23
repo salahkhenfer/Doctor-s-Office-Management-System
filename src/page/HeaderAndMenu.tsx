@@ -206,7 +206,7 @@ function HeaderAndMenu() {
                 <div className="text-item "> Messages</div>
               </div>
             </Link>
-            <Link style={{ textDecoration: "none" }}>
+            <Link to="" style={{ textDecoration: "none" }}>
               <div
                 className={` ${
                   location.pathname == "/Appointment"
@@ -218,7 +218,7 @@ function HeaderAndMenu() {
                 <div className="text-item"> Appointment</div>
               </div>
             </Link>
-            <Link style={{ textDecoration: "none" }}>
+            <Link to="" style={{ textDecoration: "none" }}>
               <div
                 className={` ${
                   location.pathname == "/Medical"

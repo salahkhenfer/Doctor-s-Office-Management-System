@@ -1,0 +1,126 @@
+.header-menu {
+  width: 100vw;
+  height: 100vh;
+}
+.header-menu .header-menu-container {
+  width: 1300px;
+  margin: auto;
+}
+
+.header {
+  height: 70px;
+  width: 100%;
+  border-bottom: 1px solid #dfe8f6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-Logo {
+  color: black;
+  font-size: 32px;
+  font-family: Poppins;
+  font-weight: 600;
+  word-wrap: break-word;
+  position: relative;
+}
+.header-Logo span {
+  position: absolute;
+
+  flex-shrink: 0;
+}
+.header-Logo span img {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: -16px;
+  right: -26px;
+}
+.header-user {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 15%;
+}
+.Notification {
+  width: 24px;
+  height: 24px;
+}
+.Setting {
+  width: 24px;
+  height: 24px;
+}
+.Avatar {
+  width: 42px;
+  height: 42px;
+}
+
+/* ======== Menu Style ========= */
+.After-header {
+  width: 1300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+.header-children {
+  width: 85%;
+  /* background-color: aqua; */
+  height: 100vh;
+}
+.menu {
+  padding-top: 20px;
+  width: 20%;
+  border-right: 1px solid #dfe8f6;
+}
+.menu-Item {
+  display: flex;
+
+  height: 56px;
+  justify-content: start;
+  align-items: center;
+  flex-shrink: 0;
+  padding: 0 10px;
+  border-radius: 5px;
+  left: -10px;
+  cursor: pointer;
+  margin: 20px 5px;
+}
+.menu-Item:hover {
+  background-color: #dfe8f6;
+}
+.menu-Item:hover .text-item {
+  color: #000000;
+}
+
+.menu-Item:hover img {
+  filter: grayscale(100%);
+}
+.menu-Item:active img {
+  filter: grayscale(100%);
+}
+.menu-Item img {
+  display: flex;
+  width: 24px;
+  height: 24px;
+  padding-right: 10px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+.menu-Item .text-item {
+  color: #8a8a8a;
+
+  text-align: justify;
+
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 142.857% */
+  letter-spacing: 0.07px;
+}
+.active .text-item {
+  color: #000000;
+}
+.active {
+  color: #000000;
+  background-color: #dfe8f6;
+}

@@ -3,11 +3,13 @@ import { createSlice } from "@reduxjs/toolkit";
 export interface userSlice {
   user: boolean;
   registerPage: string;
+  location: string;
 }
 
 const initialState: userSlice = {
   user: false,
   registerPage: "SignUp",
+  location: "/",
 };
 
 export const userSlice = createSlice({

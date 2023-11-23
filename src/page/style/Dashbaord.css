@@ -1,0 +1,270 @@
+.title-Dashboard {
+  color: #192252;
+  font-family: Poppins;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.13px;
+  margin: 30px;
+}
+.first-Container {
+  display: flex;
+}
+/* Chart style  */
+.left {
+  width: 50%;
+}
+.Charts {
+  width: 78%;
+  height: 74%;
+
+  margin-left: 50px;
+  border-radius: 8px;
+  border: 1px solid #dfe8f6;
+  padding: 10px 40px;
+  background: #fff;
+  margin: 20px;
+}
+.contianesr-Chart {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
+
+.Chart {
+  width: 90%;
+  height: 100%;
+}
+.Visits-text {
+  color: #192252;
+  text-align: justify;
+  margin: 20px 0;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.5px;
+}
+.theChart-x {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.x {
+  display: flex;
+  justify-content: space-between;
+  width: 5%;
+  flex-direction: column-reverse;
+}
+.x .Item-count {
+  color: #c5d0e6;
+  text-align: justify;
+  margin: 10px 0;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 1px;
+}
+.y {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.y .Item-count {
+  color: #c5d0e6;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  position: absolute;
+  line-height: normal;
+  letter-spacing: 1px;
+  bottom: -50px;
+}
+.columns {
+  width: 48px;
+  height: 230px;
+  bottom: -20;
+  border-radius: 8px 8px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  margin: 0 20px;
+}
+.column {
+  border-radius: 8px 8px 0px 0px;
+  background: #dfe8f6;
+  border-radius: 8px 8px 0px 0px;
+  background: #dfe8f6;
+  width: 100%;
+}
+.theBigst {
+  background: #56ccf2;
+  position: relative;
+}
+.theBigst::before {
+  content: "50%";
+  text-align: center;
+  font-size: 15px;
+  color: #dfe8f6;
+  width: 44px;
+  height: 23px;
+  border-radius: 5px;
+  background-color: #192252;
+  top: -30px;
+  left: 0;
+  position: absolute;
+}
+
+.theBigst::after {
+  content: "";
+  border-style: solid;
+  border-width: 8px;
+  border-color: black transparent transparent transparent;
+  position: absolute;
+  top: -9px;
+  right: 18px;
+}
+/* calendar Style */
+.calendar {
+  width: 413px;
+  height: 449px;
+  flex-shrink: 0;
+  border-radius: 8.39px;
+  border: 1px solid #dfe8f6;
+
+  background: #fff;
+  margin-top: 30px;
+}
+
+/* ListOfMedicalHistory Style */
+
+.ListOfMedicalHistory {
+  border-radius: 8px;
+  border: 1px solid #dfe8f6;
+
+  background: #fff;
+  margin: 20px;
+  height: 100vh;
+}
+.titleOfMedicalHistory {
+  color: #192252;
+  text-align: justify;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.09px;
+  margin: 20px;
+}
+.LineOfInfo {
+  width: 97%;
+  height: 50px;
+  border-radius: 8px;
+  background: #eff3fa;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.theType {
+  color: #2a3563;
+
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.07px;
+  margin: 0 20px;
+  text-align: center;
+}
+.Appointment-title {
+  width: 22%;
+  text-align: center;
+}
+.userLine {
+  width: 95%;
+  height: 50px;
+  border-radius: 8px;
+  background: transparent;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+.img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.userLine img {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+}
+.userLine .Fullname {
+  color: #192252;
+  text-align: justify;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.07px;
+}
+.Code {
+  color: #c5d0e6;
+  text-align: justify;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.07px;
+}
+.date-m,
+time,
+.Appointment-m {
+  color: #2a3563;
+  text-align: justify;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 142.857% */
+  letter-spacing: 0.07px;
+}
+.Action {
+  width: 70px;
+  height: 25px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.Action .icon-status {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+.Status {
+  display: inline-flex;
+  padding: 10px 12px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 4px;
+
+  text-align: justify;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 166.667% */
+  letter-spacing: 0.06px;
+}

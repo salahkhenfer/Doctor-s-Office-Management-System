@@ -10,17 +10,20 @@
 }
 .first-Container {
   display: flex;
-  display: flex;
   width: 100%;
   height: 500px;
 }
+.Title-phone {
+  display: none;
+}
+
 /* Chart style  */
 .left {
   width: 50%;
 }
+
 .Charts {
-  /* width: 78%;
-  height: 74%; */
+  height: 72%;
 
   margin-left: 50px;
   border-radius: 8px;
@@ -143,9 +146,95 @@
   background: #fff;
   margin-top: 30px;
 }
+.CalendarOpen {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+.CalendarOpen .Calendar-text {
+  color: #192252;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.08px;
+  text-transform: capitalize;
+}
+.SpaceCalendar {
+  height: 200px;
+}
+.Upcoming {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+}
 
+.Upcoming-text {
+  color: #192252;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 40.965px; /* 256.033% */
+}
+.View-link {
+  color: #56ccf2;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24.579px; /* 204.827% */
+  text-decoration-line: underline;
+}
+.box-time {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 90%;
+  margin: auto;
+  margin-top: 10px;
+}
+.icon-box {
+  width: 36.436px;
+  height: 36.436px;
+  flex-shrink: 0;
+  background-color: #2952cc;
+  border-radius: 50%;
+  text-align: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: medium;
+}
+.box-title {
+  color: #192252;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.07px;
+}
+.box-time {
+  color: #848fac;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.06px;
+}
 /* ListOfMedicalHistory Style */
-
+.MedicalHistoryCardPhone {
+  display: none;
+}
 .ListOfMedicalHistory {
   border-radius: 8px;
   border: 1px solid #dfe8f6;
@@ -277,14 +366,47 @@ time,
     width: 100vw;
     display: flex;
     flex-direction: column;
+    height: fit-content;
+    flex-direction: column-reverse; /* Reverse the order for mobile view */
   }
+
+  .left {
+    order: 1; /* Change the order of the 'left' div in mobile view */
+  }
+  .left .title-Dashboard {
+    display: none;
+  }
+  .LineOfInfo {
+    display: none;
+  }
+  .Title-phone {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .title-Dashboard {
+    color: #192252;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    /* line-height: normal; */
+    letter-spacing: 0.13px;
+    margin: 30px;
+  }
+  .Title-phone img {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+  }
+
   .Charts {
     display: block;
-    width: 72vw;
-    height: 60vh;
+    width: 69%;
+    margin: 10px auto;
     height: 60vh;
     position: relative;
-    margin: 10px;
+    /* margin: 10px; */
     border-radius: 8px;
     border: 1px solid #dfe8f6;
     /* padding: 10px 40px; */
@@ -349,5 +471,115 @@ time,
     top: -28px;
     left: -9px;
     position: absolute;
+  }
+
+  /* ================= */
+  .MedicalHistoryCardPhone {
+    border-radius: 12px;
+    border: 1px solid #eeeeef;
+    margin: 10px;
+    background: #fff;
+  }
+  /* .userLine { */
+  /* display: none; */
+  /* } */
+  .MedicalHistoryCardPhone {
+    display: block;
+  }
+  .ListOfMedicalHistory {
+    border-radius: 8px;
+    border: 1px solid #dfe8f6;
+    background: #fff;
+    margin: 20px;
+    height: 100vh;
+    position: relative;
+    /* display: block; */
+    top: 58px;
+  }
+  .userLine-phone {
+    width: 95%;
+    height: 50px;
+    border-radius: 8px;
+    background: transparent;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+  }
+  .img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .userLine-phone img {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+  }
+  .userLine-phone .Fullname {
+    color: #192252;
+    text-align: justify;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.07px;
+  }
+  .line-phone {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    background-color: #eff3fa;
+    width: 90%;
+    padding: 0 10px;
+    margin: auto;
+    border-radius: 8px;
+  }
+  .userLine {
+    display: none;
+  }
+  .line-phone-re-bg {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    width: 90%;
+    padding: 0 10px;
+    margin: 10px auto;
+    border-radius: 8px;
+  }
+  .Patient {
+    color: #2a3563;
+    text-align: justify;
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; /* 166.667% */
+  }
+  .Appointment-m {
+    color: #192252;
+    text-align: justify;
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+  }
+
+  .calendar {
+    width: 90%;
+    height: 53vh;
+    flex-shrink: 0;
+    border-radius: 8.39px;
+    border: 1px solid #dfe8f6;
+    background: #fff;
+    margin-top: 30px;
+    margin: auto;
+    position: relative;
   }
 }

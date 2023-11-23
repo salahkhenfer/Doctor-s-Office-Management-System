@@ -207,7 +207,6 @@
     width: 65%;
     height: fit-content;
     left: -100%;
-
     transition: 1s;
   }
   .menu-open {
@@ -215,6 +214,7 @@
     position: absolute;
     background-color: white;
     top: 0;
+    position: fixed;
 
     z-index: 99;
     width: 65%;

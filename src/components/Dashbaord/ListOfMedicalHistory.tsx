@@ -1,4 +1,5 @@
 import LineOMH from "./LineOMH";
+import MedicalHistoryCardPhone from "./MedicalHistoryCardPhone";
 
 function ListOfMedicalHistory() {
   type typeOfStatus = {
@@ -29,6 +30,12 @@ function ListOfMedicalHistory() {
         <div className="theType">Status</div>
         <div className="theType">Action</div>
       </div>
+
+      <MedicalHistoryCardPhone name="success" Status={success} />
+      <MedicalHistoryCardPhone name="Pending" Status={Pending} />
+      <MedicalHistoryCardPhone name="Cancled" Status={Cancled} />
+      <MedicalHistoryCardPhone name="success" Status={success} />
+      <MedicalHistoryCardPhone name="success" Status={success} />
       <LineOMH name="success" Status={success} />
       <LineOMH name="Pending" Status={Pending} />
       <LineOMH name="Cancled" Status={Cancled} />

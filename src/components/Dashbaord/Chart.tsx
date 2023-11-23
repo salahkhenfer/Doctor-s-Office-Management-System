@@ -1,5 +1,3 @@
-import React from "react";
-
 function Chart() {
   const styleCharts = (height: string) => {
     return {

@@ -1,14 +1,12 @@
-import { Outlet, useLocation, useNavigate } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import "./App.css";
-import HeaderAndMenu from "./page/headerAndMenu";
 import { useEffect } from "react";
+import HeaderAndMenu from "./page/HeaderAndMenu";
 
 function App() {
   const location = useLocation();
-  const nav = useNavigate();
   useEffect(() => {
     console.log(location.pathname);
-  
   }, [location.pathname]);
   return (
     <div>

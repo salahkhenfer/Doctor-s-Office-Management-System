@@ -6,7 +6,9 @@
   width: 1300px;
   margin: auto;
 }
-
+.header-phone {
+  display: none;
+}
 .header {
   height: 70px;
   width: 100%;
@@ -123,4 +125,147 @@
 .active {
   color: #000000;
   background-color: #dfe8f6;
+}
+/* ======= mobail style ======= */
+
+@media only screen and (max-width: 768px) {
+  .After-header {
+    width: 100%;
+    height: fit-content;
+  }
+  .header-children {
+    width: 100%;
+    height: fit-content;
+  }
+  .header-menu {
+    width: 100vw;
+    display: none;
+  }
+  .header-phone {
+    display: block;
+    width: 100vw;
+    height: fit-content;
+  }
+  .header-menu .header-menu-container {
+    width: 100%;
+    height: fit-content;
+    position: relative;
+  }
+  .header {
+    padding: 10px 0;
+    height: 50px;
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: none;
+  }
+  .menu-icon {
+    width: 35px;
+    height: 35px;
+  }
+  .Notification {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+  .Notification-contaianer {
+    position: relative;
+  }
+  .title-phone {
+    color: #192252;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  .Notification-contaianer::after {
+    content: "2";
+    width: 20px;
+    height: 20px;
+    font-size: 14px;
+
+    color: white;
+    background-color: #1678f2;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    top: -5px;
+    left: 12px;
+    transition: 10s ease;
+  }
+  .menu {
+    position: absolute;
+    background-color: white;
+    top: 0;
+    box-shadow: none;
+
+    z-index: 99;
+    width: 65%;
+    height: fit-content;
+    left: -100%;
+
+    transition: 1s;
+  }
+  .menu-open {
+    padding: 10px 0;
+    position: absolute;
+    background-color: white;
+    top: 0;
+
+    z-index: 99;
+    width: 65%;
+    height: fit-content;
+    box-shadow: 1px 0 49px -9px #868686;
+    left: 0;
+    transition: 1s;
+  }
+  .space {
+    height: 10px;
+  }
+  .header-Logo {
+    color: #192252;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  .Img-user {
+    margin-right: 20px;
+    width: 40px !important;
+    height: 40px !important;
+    filter: none !important;
+  }
+  .logoMenu {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+  }
+  .Notification-menu {
+    position: relative;
+  }
+  .Notification-menu::after {
+    content: "2";
+    width: 20px;
+    height: 20px;
+    font-size: 14px;
+
+    color: white;
+    background-color: #1678f2;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    top: 5;
+    right: -50px;
+  }
+  .menoOpen {
+    margin: 10px;
+    margin-right: 20px;
+  }
 }

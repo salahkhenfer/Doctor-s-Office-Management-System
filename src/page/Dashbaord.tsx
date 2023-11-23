@@ -1,7 +1,6 @@
 import Chart from "../components/Dashbaord/Chart";
 import "./style/Dashbaord.css";
 import Calendar from "../components/Dashbaord/Calendar";
-import ListOfMedicalHistory from "../components/Dashbaord/ListOfMedicalHistory";
 
 function Dashbaord() {
   return (
@@ -11,7 +10,7 @@ function Dashbaord() {
           <div className="title-Dashboard">Welcome back Dr. Taylor!</div>
           <Chart />
         </div>
-        {/* <Calendar /> */}
+        <Calendar />
       </div>
       {/* <ListOfMedicalHistory /> */}
     </div>

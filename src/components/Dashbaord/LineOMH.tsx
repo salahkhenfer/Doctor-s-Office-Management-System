@@ -2,7 +2,7 @@
 import user from "../../assets/avatar2.png";
 import hide from "../../assets/Hide.png";
 import Delete from "../../assets/Delete.png";
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { openDetilsHandeler, selectInfo } from "../../Redux/reducer";
 type typeOfStatus = {

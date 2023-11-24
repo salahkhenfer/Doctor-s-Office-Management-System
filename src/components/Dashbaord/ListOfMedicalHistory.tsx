@@ -1,4 +1,7 @@
+import { useEffect } from "react";
 import LineOMH from "./LineOMH";
+import { useSelector } from "react-redux";
+import { selectInfo } from "../../Redux/reducer";
 
 function ListOfMedicalHistory() {
   type typeOfStatus = {
@@ -18,22 +21,35 @@ function ListOfMedicalHistory() {
     color: "#981C19",
     backgroundColor: "#FFE4DB",
   };
+
+  const Info = useSelector(selectInfo);
+  useEffect(() => {
+    console.log(Info.openDetils);
+  }, [Info.openDetils]);
   return (
-    <div className="ListOfMedicalHistory">
-      <div className="titleOfMedicalHistory">Medical History</div>
-      <div className="LineOfInfo">
-        <div className="theType">Patient</div>
-        <div className="theType Appointment-title">Appointment</div>
-        <div className="theType">Date</div>
-        <div className="theType">Time</div>
-        <div className="theType">Status</div>
-        <div className="theType">Action</div>
-      </div>
-      <LineOMH name="success" Status={success} />
-      <LineOMH name="Pending" Status={Pending} />
-      <LineOMH name="Cancled" Status={Cancled} />
-      <LineOMH name="success" Status={success} />
-      <LineOMH name="success" Status={success} />
+    <div>
+      {!Info.openDetils && (
+        <div className="ListOfMedicalHistory">
+          <div className="titleOfMedicalHistory">Medical History</div>
+          <div className="LineOfInfo">
+            <div className="theType">Patient</div>
+            <div className="theType Appointment-title">Appointment</div>
+            <div className="theType">Date</div>
+            <div className="theType">Time</div>
+            <div className="theType">Status</div>
+            <div className="theType">Action</div>
+          </div>
+          <LineOMH name="success" Status={success} />
+          <LineOMH name="Pending" Status={Pending} />
+          <LineOMH name="Cancled" Status={Cancled} />
+          <LineOMH name="success" Status={success} />
+          <LineOMH name="success" Status={success} />
+          <LineOMH name="success" Status={success} />
+          <LineOMH name="success" Status={success} />
+          <LineOMH name="success" Status={success} />
+          <LineOMH name="success" Status={success} />
+        </div>
+      )}
     </div>
   );
 }

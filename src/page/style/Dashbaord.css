@@ -237,22 +237,235 @@
 }
 
 .detils-of-medical {
-  position: fixed;
+  position: absolute;
   width: 28%;
-  background-color: black;
-  right: -20px;
-  top: -80px;
-  height: 120vh;
+  background-color: white;
+  top: -70px;
+  right: -15px;
+  height: 150vh;
 }
 .hide-of-medical {
   position: fixed;
   width: 100vw;
   background-color: #0d0d0d;
-  right: -20px;
-  top: -80px;
+  right: 0px;
+  top: 0;
   height: 220vh;
   opacity: 0.1;
 }
+
+/* alert */
+.Payment-detail-box {
+  margin-top: 10px;
+}
+.detils-of-medical-first {
+  display: flex;
+  width: 100%;
+  height: 60px;
+  align-items: center;
+  justify-content: space-around;
+  margin: auto;
+  border-bottom: 1px solid #dcdfe3;
+  gap: 100px;
+}
+
+.detils-of-medical-title {
+  color: #192252;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1px;
+}
+.detils-of-medical-first img {
+  width: 12px;
+  height: 12px;
+  flex-shrink: 0;
+}
+.detils-user-info {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  height: 60px;
+  width: 90%;
+  margin: auto;
+  padding-bottom: 20px;
+}
+.detils-user-info img {
+  width: 56px;
+  height: 56px;
+  flex-shrink: 0;
+}
+.detils-user-info-name {
+  color: #192252;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+}
+.detils-user-info-location {
+  color: #848fac;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  opacity: 0.5;
+}
+.detils-user-info-text {
+  height: 50px;
+  margin-left: 20px;
+}
+.Payment-detail-text {
+  color: #192252;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 9px; /* 75% */
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin: 20px;
+}
+.Payment-detail-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+}
+.Payment-detail-answar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+}
+.Payment-detail-text .answar {
+  color: #c1c6d5;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 9px; /* 56.25% */
+  letter-spacing: 0.5px;
+  text-transform: capitalize;
+}
+.Payment-detail-info .text {
+  color: #192252;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 9px; /* 64.286% */
+  letter-spacing: 0.5px;
+  text-transform: capitalize;
+  opacity: 0.5;
+}
+.inital-payment-box {
+}
+.inital-payment-line {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 30px auto 10px;
+}
+.inital-payment-title {
+  color: #848fac;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 9px; /* 56.25% */
+  letter-spacing: 0.5px;
+  text-transform: capitalize;
+}
+.inital-payment-prix {
+  color: #192252;
+  text-align: right;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 9px; /* 56.25% */
+  letter-spacing: 0.5px;
+  text-transform: capitalize;
+}
+.inital-payment-sep {
+  width: 430px;
+  height: 1px;
+  color: #c5d0e6;
+  width: 90%;
+  margin: auto;
+}
+
+.inital-payment-title-total {
+  color: #192252;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 9px; /* 56.25% */
+  letter-spacing: 0.5px;
+  text-transform: capitalize;
+}
+.inital-payment-prix-total {
+  color: #52bd94;
+  text-align: right;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 9px; /* 50% */
+  letter-spacing: 0.5px;
+  text-transform: capitalize;
+}
+.inital-payment-documentation {
+  color: #192252;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 9px; /* 75% */
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  width: 90%;
+  margin: 30px auto;
+}
+.upload-doc-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+  border: 1px solid #dfe8f6;
+  padding: 15px 10px;
+  width: 85%;
+
+  margin: auto;
+}
+.upload-doc-info {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.upload-doc-info img {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  margin-right: 10px;
+}
+.upload-doc-text {
+  color: #192252;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 9px; /* 64.286% */
+  letter-spacing: 0.5px;
+}
+.upload-doc-download {
+  width: 24px;
+  height: 24px;
+}
+/* ========= */
 .ListOfMedicalHistory {
   height: fit-content;
   cursor: pointer;
@@ -515,7 +728,7 @@ time,
     height: fit-content;
     position: relative;
     /* display: block; */
-    top: 58px;
+    /* top: 58px; */
   }
   .userLine-phone {
     width: 95%;
@@ -602,5 +815,17 @@ time,
     margin-top: 30px;
     margin: auto;
     position: relative;
+  }
+  .detils-of-medical {
+    position: absolute;
+    width: 100%;
+    background-color: white;
+    top: 0;
+    left: 0;
+
+    height: fit-content;
+  }
+  .hide-of-medical {
+    display: none;
   }
 }

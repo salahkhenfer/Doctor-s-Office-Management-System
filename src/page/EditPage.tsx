@@ -49,7 +49,6 @@ function EditPage() {
         <div className="labal-edit"> Full Name</div>
         <textarea
           className="input-edit-textarea"
-          type="textarea"
           placeholder=" Inpute your Profile Desciption here"
         />
       </div>

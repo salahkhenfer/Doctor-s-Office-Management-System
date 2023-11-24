@@ -37,7 +37,9 @@ function HeaderAndMenu() {
             <div className="header-user">
               <img className="Notification" src={Notification} alt="" />
               <img className="Setting" src={Setting} alt="" />
-              <img className="Avatar" src={Avatar} alt="" />
+              <Link to={"/Profile"}>
+                <img className="Avatar" src={Avatar} alt="" />
+              </Link>
             </div>
           </div>
           <div className="After-header">

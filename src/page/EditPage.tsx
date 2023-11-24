@@ -1,15 +1,20 @@
 import bacground from "../assets/backGroundUser.png";
 import user from "../assets/Avatar.png";
 import "./style/EditPage.css";
-import { useSelector } from "react-redux";
-import { selectInfo } from "../Redux/reducer";
+import { useDispatch, useSelector } from "react-redux";
+import { menuOpen, selectInfo } from "../Redux/reducer";
+import { Link } from "react-router-dom";
 
 function EditPage() {
   const Info = useSelector(selectInfo);
-  //   const dispatch = useDispatch();
+  const dispatch = useDispatch();
+  const handelarChange = () => {
+    dispatch(menuOpen());
+  };
+  console.log(window.innerWidth);
 
   return (
-    <div className={`${Info.menu ? "EditPage  " : "EditPage-move EditPage"}`}>
+    <div className={`${Info.menu ? "EditPage  " : "EditPage-move "}`}>
       <div className="EditPage-title">Edit profile</div>
       <div className="EditPage-dec">
         Your profile will be displayed publicly so be careful what you share
@@ -50,8 +55,18 @@ function EditPage() {
       </div>
 
       <div className=" save-change">
-        <div className="Remove-photo"> Cancel </div>
-        <div className="Change-photo">Save Changes</div>
+        <Link to="/Profile" style={{ textDecoration: "none" }}>
+          <div onClick={handelarChange} className="Remove-photo">
+            {" "}
+            Cancel{" "}
+          </div>
+        </Link>
+
+        <Link to="/Profile" style={{ textDecoration: "none" }}>
+          <div onClick={handelarChange} className="Change-photo">
+            Save Changes
+          </div>
+        </Link>
       </div>
     </div>
   );

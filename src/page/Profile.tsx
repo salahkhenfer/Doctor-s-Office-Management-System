@@ -6,10 +6,16 @@ import edit from "../assets/Edit.png";
 import { useDispatch } from "react-redux";
 import { menuHandeler } from "../Redux/reducer";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 
 function Profile() {
   const dispatch = useDispatch();
-
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
   return (
     <div className="Profile">
       <div className="user-informaion">
@@ -30,7 +36,7 @@ function Profile() {
               <div className="loction-text">Alger, Algeria</div>
             </div>
           </div>
-          <Link to="/Profile/EditPage">
+          <Link to="/Profile/EditPage" style={{ textDecoration: "none" }}>
             <div
               onClick={() => dispatch(menuHandeler())}
               className="edit-button"

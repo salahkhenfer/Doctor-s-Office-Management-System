@@ -2,10 +2,31 @@
   transform: translateX(-18%);
   transition: 1s;
   padding: 30px 20px;
+  animation-name: open;
+  animation-duration: 1s;
 }
 .EditPage-move {
   transform: translateX(0%);
   transition: 1s;
+  padding: 30px 20px;
+  animation-name: back;
+  animation-duration: 1s;
+}
+@keyframes open {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-18%);
+  }
+}
+@keyframes back {
+  from {
+    transform: translateX(-18%);
+  }
+  to {
+    transform: translateX(10%);
+  }
 }
 .EditPage-title {
   color: #192252;
@@ -16,6 +37,7 @@
   line-height: normal;
   padding: 5px;
 }
+
 .EditPage-dec {
   color: #848fac;
   text-align: justify;
@@ -40,15 +62,15 @@
   padding: 10px 5px 10px;
 }
 
-.EditPage .background-edit {
+.background-edit {
   width: 1200px;
 }
-.EditPage .background-edit img {
+.background-edit img {
   height: 225px;
   width: 100%;
   border-radius: 10px;
 }
-.EditPage .Profile-picture {
+.Profile-picture {
   color: #192252;
   font-family: Poppins;
   font-size: 16px;
@@ -59,7 +81,7 @@
   padding: 5px;
   margin: 20px 0 0;
 }
-.EditPage .handel-edit {
+.handel-edit {
   display: flex;
   justify-content: start;
   align-items: center;
@@ -67,11 +89,11 @@
   gap: 20px;
   margin: 20px 0;
 }
-.EditPage .handel-edit img {
+.handel-edit img {
   width: 56px;
   height: 56px;
 }
-.EditPage .Change-photo {
+.Change-photo {
   border-radius: 8px;
   background: #103f74;
   padding: 12px 20px;
@@ -80,8 +102,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+  transition: 1s;
 }
-.EditPage .Remove-photo {
+.Change-photo:hover {
+  background: #155bab;
+}
+.Remove-photo {
   border-radius: 8px;
   padding: 12px 20px;
   cursor: pointer;
@@ -90,8 +117,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
-.EditPage .Remove-photo:hover {
+.Remove-photo:hover {
   background-color: #848fac;
   color: white;
 }
@@ -143,4 +171,60 @@
   align-items: center;
   gap: 20px;
   margin: 60px 0 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .EditPage {
+    transform: translateX(0%);
+    animation-name: none;
+  }
+  .EditPage-move {
+    display: block;
+  }
+
+  .background-edit {
+    width: 100vw;
+  }
+  .background-edit img {
+    width: 84vw;
+    object-fit: fill;
+    height: 134px;
+  }
+  .Change-photo {
+    padding: 11px 13px;
+    color: white;
+    font-size: 14px;
+  }
+  .Remove-photo {
+    padding: 11px 13px;
+    font-size: 14px;
+    border-radius: 8px;
+  }
+  .save-change .Remove-photo {
+    padding: 11px 13px;
+    height: 20%;
+    width: 91%;
+    font-size: 14px;
+    border-radius: 8px;
+    border: 1px solid #c5d0e6;
+    padding: 13px 20px;
+  }
+  .save-change .Change-photo {
+    padding: 11px 13px;
+    font-size: 14px;
+    height: 20%;
+    width: 91%;
+    border-radius: 8px;
+    border: 1px solid #c5d0e6;
+  }
+  .save-change {
+    justify-content: space-around !important;
+    align-items: center;
+  }
+  .inputs-edit .input-edit {
+    width: 77%;
+  }
+  .inputs-edit .input-edit-textarea {
+    width: 77%;
+  }
 }

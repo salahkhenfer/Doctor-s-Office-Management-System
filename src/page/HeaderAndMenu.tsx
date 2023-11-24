@@ -143,8 +143,10 @@ function HeaderAndMenu() {
                     : "menu-Item"
                 }`}
               >
-                <img className="Img-user" src={Avatar} alt="" />
-                <div className=" text-item "> Edit My Profile</div>
+                <Link to="/Profile">
+                  <img className="Img-user" src={Avatar} alt="" />
+                  <div className=" text-item "> Edit My Profile</div>
+                </Link>
               </div>
             </Link>
 

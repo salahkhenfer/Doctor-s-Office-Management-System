@@ -137,6 +137,7 @@ function HeaderAndMenu() {
 
             <Link to="/Profile" style={{ textDecoration: "none" }}>
               <div
+                onClick={handelMenu}
                 className={` ${
                   location.pathname == "/Profile"
                     ? "menu-Item  active"

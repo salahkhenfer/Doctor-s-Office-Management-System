@@ -2,7 +2,7 @@ import "./style/Profile.css";
 import background from "../assets/backGroundUser.png";
 import Avatar from "../assets/Avatar.png";
 import Location from "../assets/Location.png";
-import edit from "../assets/edit.png";
+import edit from "../assets/Edit.png";
 function Profile() {
   return (
     <div className="Profile">

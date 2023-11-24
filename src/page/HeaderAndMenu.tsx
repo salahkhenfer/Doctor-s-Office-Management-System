@@ -16,7 +16,7 @@ import { useEffect, useState } from "react";
 
 function HeaderAndMenu() {
   const location = useLocation();
-  const [openMenu, setOpenMenu] = useState(true);
+  const [openMenu, setOpenMenu] = useState(false);
   useEffect(() => {
     console.log(location.pathname);
   }, [location.pathname]);
@@ -119,7 +119,7 @@ function HeaderAndMenu() {
             </div>
           </div>
 
-          <div className={`${openMenu ? "menu-phone" : "menu-open"}`}>
+          <div className={`${openMenu ? "menu" : "menu-open"}`}>
             <div className="logoMenu">
               <img
                 className="menoOpen"

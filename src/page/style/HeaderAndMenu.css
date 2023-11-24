@@ -218,7 +218,7 @@
 
     z-index: 99;
     width: 65%;
-    height: fit-content;
+    height: 100vh;
     box-shadow: 1px 0 49px -9px #868686;
     left: 0;
     transition: 1s;

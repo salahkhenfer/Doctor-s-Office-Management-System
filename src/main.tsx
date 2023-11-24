@@ -9,6 +9,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Dashbaord from "./page/Dashbaord.tsx";
 import Patients from "./page/Patients.tsx";
 import Profile from "./page/Profile.tsx";
+import EditPage from "./page/EditPage.tsx";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
       {
         path: "/Profile",
         element: <Profile />,
+      },
+      {
+        path: "/Profile/EditPage",
+        element: <EditPage />,
       },
     ],
   },

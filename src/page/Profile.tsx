@@ -5,6 +5,7 @@ import Location from "../assets/Location.png";
 import edit from "../assets/Edit.png";
 import { useDispatch } from "react-redux";
 import { menuHandeler } from "../Redux/reducer";
+import { Link } from "react-router-dom";
 
 function Profile() {
   const dispatch = useDispatch();
@@ -29,10 +30,15 @@ function Profile() {
               <div className="loction-text">Alger, Algeria</div>
             </div>
           </div>
-          <div onClick={() => dispatch(menuHandeler())} className="edit-button">
-            <img src={edit} alt="" />
-            <div className="edit-text">Edit profile</div>
-          </div>
+          <Link to="/Profile/EditPage">
+            <div
+              onClick={() => dispatch(menuHandeler())}
+              className="edit-button"
+            >
+              <img src={edit} alt="" />
+              <div className="edit-text">Edit profile</div>
+            </div>
+          </Link>
         </div>
       </div>
       <div className="Profile-description">

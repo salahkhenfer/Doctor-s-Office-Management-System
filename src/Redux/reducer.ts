@@ -11,7 +11,7 @@ const initialState: UserSliceState = {
   user: false,
   registerPage: "SignUp",
   location: "/",
-  menu: true,
+  menu: false,
 };
 
 export const userSlice = createSlice({
@@ -39,6 +39,12 @@ export const userSlice = createSlice({
     menuHandeler: (state) => {
       state.menu = !state.menu;
     },
+    menuClose: (state) => {
+      state.menu = true;
+    },
+    menuOpen: (state) => {
+      state.menu = false;
+    },
   },
 });
 export const selectUser = (state: { info: UserSliceState }) => state.info;
@@ -53,6 +59,8 @@ export const {
   Verification,
   Login,
   menuHandeler,
+  menuOpen,
+  menuClose,
 } = userSlice.actions;
 
 export default userSlice.reducer;

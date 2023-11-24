@@ -5,6 +5,7 @@ export interface UserSliceState {
   registerPage: string;
   location: string;
   menu: boolean;
+  openDetils: boolean;
 }
 
 const initialState: UserSliceState = {
@@ -12,6 +13,7 @@ const initialState: UserSliceState = {
   registerPage: "SignUp",
   location: "/",
   menu: false,
+  openDetils: false,
 };
 
 export const userSlice = createSlice({
@@ -45,6 +47,9 @@ export const userSlice = createSlice({
     menuOpen: (state) => {
       state.menu = false;
     },
+    openDetilsHandeler: (state) => {
+      state.openDetils = !state.openDetils;
+    },
   },
 });
 export const selectUser = (state: { info: UserSliceState }) => state.info;
@@ -61,6 +66,7 @@ export const {
   menuHandeler,
   menuOpen,
   menuClose,
+  openDetilsHandeler,
 } = userSlice.actions;
 
 export default userSlice.reducer;

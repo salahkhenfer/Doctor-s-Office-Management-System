@@ -1,23 +1,24 @@
-import LineOMH from "./LineOMH";
+import LineOMH from "../components/Dashbaord/LineOMH";
 
-function ListOfMedicalHistory() {
-  type typeOfStatus = {
-    color: string;
-    backgroundColor: string;
-  };
+type typeOfStatus = {
+  color: string;
+  backgroundColor: string;
+};
 
-  const success: typeOfStatus = {
-    color: "#479b36",
-    backgroundColor: "#cffcd4",
-  };
-  const Pending: typeOfStatus = {
-    color: "#8B601D",
-    backgroundColor: "#FFF7D0",
-  };
-  const Cancled: typeOfStatus = {
-    color: "#981C19",
-    backgroundColor: "#FFE4DB",
-  };
+const success: typeOfStatus = {
+  color: "#479b36",
+  backgroundColor: "#cffcd4",
+};
+const Pending: typeOfStatus = {
+  color: "#8B601D",
+  backgroundColor: "#FFF7D0",
+};
+const Cancled: typeOfStatus = {
+  color: "#981C19",
+  backgroundColor: "#FFE4DB",
+};
+
+function MedicalHistory() {
   return (
     <div className="ListOfMedicalHistory">
       <div className="titleOfMedicalHistory">Medical History</div>
@@ -29,6 +30,7 @@ function ListOfMedicalHistory() {
         <div className="theType">Status</div>
         <div className="theType">Action</div>
       </div>
+
       <LineOMH name="success" Status={success} />
       <LineOMH name="Pending" Status={Pending} />
       <LineOMH name="Cancled" Status={Cancled} />
@@ -38,4 +40,4 @@ function ListOfMedicalHistory() {
   );
 }
 
-export default ListOfMedicalHistory;
+export default MedicalHistory;

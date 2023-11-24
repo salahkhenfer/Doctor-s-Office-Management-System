@@ -1,14 +1,13 @@
 .EditPage {
   transform: translateX(-18%);
   transition: 1s;
-  padding: 30px 20px;
   animation-name: open;
   animation-duration: 1s;
+  padding: 30px 20px;
 }
 .EditPage-move {
   transform: translateX(0%);
   transition: 1s;
-  padding: 30px 20px;
   animation-name: back;
   animation-duration: 1s;
 }
@@ -178,14 +177,22 @@
     transform: translateX(0%);
     animation-name: none;
     transition: 0;
-    width: 100%;
+    padding: 0px;
+    width: 90vw;
+    margin: 30px auto;
   }
   .EditPage-move {
     display: block;
+    transform: translateX(0%);
+    animation-name: none;
+    transition: 0;
+    padding: 0px;
+    width: 90vw;
+    margin: 30px auto;
   }
 
   .background-edit {
-    width: 100vw;
+    width: 90vw;
   }
   .background-edit img {
     width: 84vw;
@@ -224,9 +231,9 @@
     align-items: center;
   }
   .inputs-edit .input-edit {
-    width: 77%;
+    width: 85%;
   }
   .inputs-edit .input-edit-textarea {
-    width: 77%;
+    width: 85%;
   }
 }

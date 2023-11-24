@@ -235,7 +235,28 @@
 .MedicalHistoryCardPhone {
   display: none;
 }
+
+.detils-of-medical {
+  position: fixed;
+  width: 28%;
+  background-color: black;
+  right: -20px;
+  top: -80px;
+  height: 120vh;
+}
+.hide-of-medical {
+  position: fixed;
+  width: 100vw;
+  background-color: #0d0d0d;
+  right: -20px;
+  top: -80px;
+  height: 220vh;
+  opacity: 0.1;
+}
 .ListOfMedicalHistory {
+  height: fit-content;
+  cursor: pointer;
+
   border-radius: 8px;
   border: 1px solid #dfe8f6;
 
@@ -282,7 +303,7 @@
 }
 .userLine {
   width: 95%;
-  height: 50px;
+  height: fit-content;
   border-radius: 8px;
   background: transparent;
   margin: auto;

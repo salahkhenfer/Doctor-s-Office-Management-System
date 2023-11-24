@@ -14,7 +14,7 @@ import menoOpen from "../assets/menoOpen.png";
 import { Link, Outlet, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { menuOpen, selectInfo } from "../Redux/reducer";
+import {  menuOpen, selectInfo } from "../Redux/reducer";
 
 function HeaderAndMenu() {
   const location = useLocation();
@@ -44,12 +44,20 @@ function HeaderAndMenu() {
       <div className="header-menu">
         <div className="header-menu-container">
           <div className="header">
-            <div className="header-Logo">
-              Healthy 24.{" "}
-              <span>
-                <img src={plus} alt="" />
-              </span>
-            </div>
+            <Link to="/" style={{ textDecoration: "none" }}>
+              <div
+                onClick={() => {
+                  dispatch(menuOpen());
+                }}
+                className="header-Logo"
+              >
+                Healthy 24.{" "}
+                <span>
+                  <img src={plus} alt="" />
+                </span>
+              </div>
+            </Link>
+
             <div className="header-user">
               <img className="Notification" src={Notification} alt="" />
               <img className="Setting" src={Setting} alt="" />
@@ -87,10 +95,12 @@ function HeaderAndMenu() {
                   <div className="text-item"> Patients list</div>
                 </div>
               </Link>
-              <Link to="/" style={{ textDecoration: "none" }}>
+              <Link to="/Messages" style={{ textDecoration: "none" }}>
                 <div
                   className={` ${
-                    location.pathname == "/" ? "menu-Item active" : "menu-Item"
+                    location.pathname == "/Messages"
+                      ? "menu-Item active"
+                      : "menu-Item"
                   }`}
                 >
                   <img src={Chat} alt="" />
@@ -107,10 +117,12 @@ function HeaderAndMenu() {
                   <div className="text-item"> Appointment</div>
                 </div>
               </Link>
-              <Link to="/" style={{ textDecoration: "none" }}>
+              <Link to="/MedicalHistory" style={{ textDecoration: "none" }}>
                 <div
                   className={` ${
-                    location.pathname == "/" ? "menu-Item active" : "menu-Item"
+                    location.pathname == "/MedicalHistory"
+                      ? "menu-Item active"
+                      : "menu-Item"
                   }`}
                 >
                   <img src={Calendar} alt="" />

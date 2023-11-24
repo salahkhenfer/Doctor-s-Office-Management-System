@@ -8,6 +8,7 @@ import { Provider } from "react-redux";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Dashbaord from "./page/Dashbaord.tsx";
 import Patients from "./page/Patients.tsx";
+import Profile from "./page/Profile.tsx";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
       {
         path: "/Patients",
         element: <Patients />,
+      },
+      {
+        path: "/Profile",
+        element: <Profile />,
       },
     ],
   },

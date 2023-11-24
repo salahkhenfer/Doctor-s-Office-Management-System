@@ -1,0 +1,209 @@
+.Profile {
+  width: 90%;
+  height: fit-content;
+
+  border-radius: 12px;
+
+  margin: 30px auto;
+  position: relative;
+}
+.user-informaion {
+  border: 1px solid #dfe8f6;
+  border-radius: 12px;
+}
+.Profile .background {
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.user-info-icon {
+  position: absolute;
+  top: 160px;
+  left: 52px;
+  width: 146px;
+  height: 146px;
+  border-radius: 50%;
+  border: 8px solid #fff;
+}
+.user-info-icon img {
+  width: 146px;
+  height: 146px;
+  border-radius: 12px;
+}
+.box-info {
+  padding-left: 25%;
+  display: flex;
+  justify-content: space-between;
+  align-items: star;
+  margin: 20px;
+}
+.name-user {
+  color: #192252;
+  font-family: Poppins;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.18px;
+}
+.Speciality {
+  color: #848fac;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.09px;
+}
+.loction-button {
+  margin-top: 20px;
+  display: flex;
+  padding: 12px 20px;
+  cursor: pointer;
+  align-items: flex-start;
+  gap: 10px;
+  width: fit-content;
+  border-radius: 40px;
+  background: #eff3fa;
+}
+.loction-button .loction-text {
+  color: #192252;
+  font-family: Poppins;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.09px;
+}
+.edit-button {
+  border-radius: 8px;
+  border: 1px solid #dfe8f6;
+  background: #fff;
+  display: flex;
+  padding: 10px 12px;
+  height: fit-content;
+  cursor: pointer;
+
+  gap: 10px;
+}
+.edit-button img {
+  display: flex;
+  width: 24px;
+  height: 24px;
+}
+.edit-text {
+  color: #3ea2d0;
+  font-family: Poppins;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.1px;
+}
+
+.Profile-description {
+  border-radius: 12px;
+  border: 1px solid #dfe8f6;
+  background: #fff;
+  margin: 30px 0;
+  position: relative;
+  padding: 20px;
+}
+.Profile-description-title {
+  color: #192252;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.Profile-description-text-dic {
+  margin: 10px 0;
+  color: #848fac;
+  text-align: justify;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.09px;
+  margin-left: 0px;
+}
+.Profile-description-text {
+  color: #848fac;
+  text-align: justify;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.09px;
+  margin-left: 20px;
+}
+.footer {
+  height: 50px;
+}
+
+/* ======== phone Style========== */
+@media only screen and (max-width: 768px) {
+  .user-info-icon img {
+    width: 80px;
+    height: 80px;
+    border-radius: 12px;
+  }
+  .user-info-icon {
+    position: absolute;
+    top: 86px;
+    left: 28px;
+    width: 80px;
+    height: 80px;
+    top: 192px px;
+    left: 28px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 8px solid #fff;
+  }
+  .background {
+    width: 327px;
+    height: 134px;
+  }
+  .box-info {
+    padding-left: 25%;
+    display: flex;
+    justify-content: space-between;
+    align-items: star;
+    padding: 58px 5px 20px;
+  }
+  .edit-text {
+    display: none;
+  }
+  .name-user {
+    color: #192252;
+
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.08px;
+  }
+  .Speciality {
+    color: #848fac;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.07px;
+  }
+  .Profile-description-title {
+    font-size: 22px;
+  }
+  .Profile-description-text-dic {
+    font-size: 16px;
+  }
+  .Profile-description-text {
+    font-size: 15px;
+  }
+}

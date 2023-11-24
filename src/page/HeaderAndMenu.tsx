@@ -19,14 +19,25 @@ import { menuOpen, selectInfo } from "../Redux/reducer";
 function HeaderAndMenu() {
   const location = useLocation();
   const [openMenu, setOpenMenu] = useState(false);
+  const [title, setTitle] = useState("");
+  const Info = useSelector(selectInfo);
+  const dispatch = useDispatch();
+  const newPathname: string[] = location.pathname.split("/"); // Remove all slashes
+  const lastSegment: string = newPathname[newPathname.length - 1];
+
   useEffect(() => {
-    console.log(location.pathname);
+    if (location.pathname == "/") {
+      setTitle("Dashbaord");
+    } else if (location.pathname === "/Profile/EditPage") {
+      setTitle("Edit Profile");
+    } else {
+      setTitle(lastSegment);
+    }
   }, [location.pathname]);
+
   const handelMenu = () => {
     setOpenMenu(!openMenu);
   };
-  const Info = useSelector(selectInfo);
-  const dispatch = useDispatch();
 
   return (
     <>
@@ -125,7 +136,7 @@ function HeaderAndMenu() {
               src={Frame}
               alt=""
             />
-            <div className="title-phone"> Dashboard</div>
+            <div className="title-phone"> {title}</div>
             <div className="Notification-contaianer">
               <img className="Notification" src={Notification} alt="" />
             </div>

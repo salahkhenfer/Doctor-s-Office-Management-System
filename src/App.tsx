@@ -6,7 +6,7 @@ import HeaderAndMenu from "./page/HeaderAndMenu";
 function App() {
   const location = useLocation();
   useEffect(() => {
-    console.log(location.pathname);
+    // console.log(location.pathname);
   }, [location.pathname]);
   return (
     <div>

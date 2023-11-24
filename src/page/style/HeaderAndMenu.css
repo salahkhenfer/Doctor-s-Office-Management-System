@@ -87,7 +87,7 @@
   margin: 20px 5px;
 }
 .menu-Item:hover {
-  background-color: #dfe8f6;
+  background-color: #eff3fa;
 }
 .menu-Item:hover .text-item {
   color: #000000;
@@ -124,7 +124,7 @@
 }
 .active {
   color: #000000;
-  background-color: #dfe8f6;
+  background-color: #eff3fa;
 }
 /* ======= mobail style ======= */
 
@@ -205,7 +205,7 @@
 
     z-index: 99;
     width: 65%;
-    height: fit-content;
+    height: 100vh;
     left: -100%;
     transition: 1s;
   }

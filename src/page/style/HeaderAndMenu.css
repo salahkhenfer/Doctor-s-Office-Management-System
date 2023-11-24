@@ -75,13 +75,12 @@
   border-right: 1px solid #dfe8f6;
 
   transition: 100ms;
-  opacity: 0;
+
   transform: translateX(-150%);
 }
 .menu-close {
   transform: translateX(0%);
   transition: 1s;
-  opacity: 1;
 }
 .menu-Item {
   display: flex;

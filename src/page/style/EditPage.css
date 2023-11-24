@@ -177,6 +177,8 @@
   .EditPage {
     transform: translateX(0%);
     animation-name: none;
+    transition: 0;
+    width: 100%;
   }
   .EditPage-move {
     display: block;

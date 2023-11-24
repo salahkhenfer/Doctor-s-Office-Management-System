@@ -3,7 +3,12 @@ import background from "../assets/backGroundUser.png";
 import Avatar from "../assets/Avatar.png";
 import Location from "../assets/Location.png";
 import edit from "../assets/Edit.png";
+import { useDispatch } from "react-redux";
+import { menuHandeler } from "../Redux/reducer";
+
 function Profile() {
+  const dispatch = useDispatch();
+
   return (
     <div className="Profile">
       <div className="user-informaion">
@@ -24,7 +29,7 @@ function Profile() {
               <div className="loction-text">Alger, Algeria</div>
             </div>
           </div>
-          <div className="edit-button">
+          <div onClick={() => dispatch(menuHandeler())} className="edit-button">
             <img src={edit} alt="" />
             <div className="edit-text">Edit profile</div>
           </div>

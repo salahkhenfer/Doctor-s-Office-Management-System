@@ -62,6 +62,7 @@
   display: flex;
   justify-content: space-between;
   align-items: start;
+  position: relative;
 }
 .header-children {
   width: 85%;
@@ -72,6 +73,11 @@
   padding-top: 20px;
   width: 20%;
   border-right: 1px solid #dfe8f6;
+  transition: 1s;
+  transform: translateX(-150%);
+}
+.menu-close {
+  transform: translateX(0%);
 }
 .menu-Item {
   display: flex;
@@ -207,8 +213,11 @@
     width: 65%;
     height: 100vh;
     left: -100%;
+    transform: translateX(0%);
+
     transition: 1s;
   }
+
   .menu-open {
     padding: 10px 0;
     position: absolute;

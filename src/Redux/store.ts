@@ -3,7 +3,7 @@ import userSlice from "./reducer";
 
 export const store = configureStore({
   reducer: {
-    user: userSlice,
+    info: userSlice,
   },
 });
 

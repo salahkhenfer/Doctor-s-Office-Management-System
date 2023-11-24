@@ -13,6 +13,8 @@ import Frame from "../assets/Frame.png";
 import menoOpen from "../assets/menoOpen.png";
 import { Link, Outlet, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
+import { useSelector } from "react-redux";
+import { selectInfo } from "../Redux/reducer";
 
 function HeaderAndMenu() {
   const location = useLocation();
@@ -23,6 +25,8 @@ function HeaderAndMenu() {
   const handelMenu = () => {
     setOpenMenu(!openMenu);
   };
+  const Info = useSelector(selectInfo);
+  console.log(Info.menu);
   return (
     <>
       <div className="header-menu">
@@ -43,60 +47,70 @@ function HeaderAndMenu() {
             </div>
           </div>
           <div className="After-header">
-            <div className="menu">
-              <Link to="/" style={{ textDecoration: "none" }}>
-                <div
-                  className={` ${
-                    location.pathname == "/" ? "menu-Item active" : "menu-Item"
-                  }`}
-                >
-                  <img src={dashboard} alt="" />
-                  <div className=" text-item "> Dashboard</div>
-                </div>
-              </Link>
-              <Link to="/Patients" style={{ textDecoration: "none" }}>
-                <div
-                  className={` ${
-                    location.pathname == "/Patients"
-                      ? "menu-Item active"
-                      : "menu-Item"
-                  }`}
-                >
-                  <img src={Users} alt="" />
-                  <div className="text-item"> Patients list</div>
-                </div>
-              </Link>
-              <Link to="/" style={{ textDecoration: "none" }}>
-                <div
-                  className={` ${
-                    location.pathname == "/" ? "menu-Item active" : "menu-Item"
-                  }`}
-                >
-                  <img src={Chat} alt="" />
-                  <div className="text-item "> Messages</div>
-                </div>
-              </Link>
-              <Link to="/" style={{ textDecoration: "none" }}>
-                <div
-                  className={` ${
-                    location.pathname == "/" ? "menu-Item active" : "menu-Item"
-                  }`}
-                >
-                  <img src={Activity} alt="" />
-                  <div className="text-item"> Appointment</div>
-                </div>
-              </Link>
-              <Link to="/" style={{ textDecoration: "none" }}>
-                <div
-                  className={` ${
-                    location.pathname == "/" ? "menu-Item active" : "menu-Item"
-                  }`}
-                >
-                  <img src={Calendar} alt="" />
-                  <div className="text-item"> Medical History </div>
-                </div>
-              </Link>
-            </div>
+            
+              <div className={`${Info.menu ? "menu" : " menu menu-close"}`}>
+                <Link to="/" style={{ textDecoration: "none" }}>
+                  <div
+                    className={` ${
+                      location.pathname == "/"
+                        ? "menu-Item active"
+                        : "menu-Item"
+                    }`}
+                  >
+                    <img src={dashboard} alt="" />
+                    <div className=" text-item "> Dashboard</div>
+                  </div>
+                </Link>
+                <Link to="/Patients" style={{ textDecoration: "none" }}>
+                  <div
+                    className={` ${
+                      location.pathname == "/Patients"
+                        ? "menu-Item active"
+                        : "menu-Item"
+                    }`}
+                  >
+                    <img src={Users} alt="" />
+                    <div className="text-item"> Patients list</div>
+                  </div>
+                </Link>
+                <Link to="/" style={{ textDecoration: "none" }}>
+                  <div
+                    className={` ${
+                      location.pathname == "/"
+                        ? "menu-Item active"
+                        : "menu-Item"
+                    }`}
+                  >
+                    <img src={Chat} alt="" />
+                    <div className="text-item "> Messages</div>
+                  </div>
+                </Link>
+                <Link to="/" style={{ textDecoration: "none" }}>
+                  <div
+                    className={` ${
+                      location.pathname == "/"
+                        ? "menu-Item active"
+                        : "menu-Item"
+                    }`}
+                  >
+                    <img src={Activity} alt="" />
+                    <div className="text-item"> Appointment</div>
+                  </div>
+                </Link>
+                <Link to="/" style={{ textDecoration: "none" }}>
+                  <div
+                    className={` ${
+                      location.pathname == "/"
+                        ? "menu-Item active"
+                        : "menu-Item"
+                    }`}
+                  >
+                    <img src={Calendar} alt="" />
+                    <div className="text-item"> Medical History </div>
+                  </div>
+                </Link>
+              </div>
+            
             <div className="header-children">
               {" "}
               <Outlet />
@@ -104,6 +118,7 @@ function HeaderAndMenu() {
           </div>
         </div>
       </div>
+
       <div className="header-phone">
         <div className="header-menu-container">
           <div className="header">

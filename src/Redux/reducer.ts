@@ -1,19 +1,21 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-export interface userSlice {
+export interface UserSliceState {
   user: boolean;
   registerPage: string;
   location: string;
+  menu: boolean;
 }
 
-const initialState: userSlice = {
+const initialState: UserSliceState = {
   user: false,
   registerPage: "SignUp",
   location: "/",
+  menu: true,
 };
 
 export const userSlice = createSlice({
-  name: "user",
+  name: "info",
   initialState,
   reducers: {
     userLogin: (state) => {
@@ -34,9 +36,13 @@ export const userSlice = createSlice({
     Verification: (state) => {
       state.registerPage = "Verification";
     },
+    menuHandeler: (state) => {
+      state.menu = !state.menu;
+    },
   },
 });
-export const selectUser = (state: { user: never }) => state.user;
+export const selectUser = (state: { info: UserSliceState }) => state.info;
+export const selectInfo = (state: { info: UserSliceState }) => state.info;
 
 // Action creators are generated for each case reducer function
 export const {
@@ -46,6 +52,7 @@ export const {
   SignUp,
   Verification,
   Login,
+  menuHandeler,
 } = userSlice.actions;
 
 export default userSlice.reducer;

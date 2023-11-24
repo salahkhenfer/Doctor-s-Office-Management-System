@@ -197,7 +197,7 @@
     left: 12px;
     transition: 10s ease;
   }
-  .menu {
+  .menu-phone {
     position: absolute;
     background-color: white;
     top: 0;
@@ -208,6 +208,9 @@
     height: 100vh;
     left: -100%;
     transition: 1s;
+  }
+  .menu {
+    display: none;
   }
   .menu-open {
     padding: 10px 0;

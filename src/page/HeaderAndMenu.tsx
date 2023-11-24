@@ -16,7 +16,7 @@ import { useEffect, useState } from "react";
 
 function HeaderAndMenu() {
   const location = useLocation();
-  const [openMenu, setOpenMenu] = useState(false);
+  const [openMenu, setOpenMenu] = useState(true);
   useEffect(() => {
     console.log(location.pathname);
   }, [location.pathname]);
@@ -37,7 +37,7 @@ function HeaderAndMenu() {
             <div className="header-user">
               <img className="Notification" src={Notification} alt="" />
               <img className="Setting" src={Setting} alt="" />
-              <Link to={"/Profile"}>
+              <Link to="/Profile">
                 <img className="Avatar" src={Avatar} alt="" />
               </Link>
             </div>
@@ -119,7 +119,7 @@ function HeaderAndMenu() {
             </div>
           </div>
 
-          <div className={`${openMenu ? "menu" : "menu-open"}`}>
+          <div className={`${openMenu ? "menu-phone" : "menu-open"}`}>
             <div className="logoMenu">
               <img
                 className="menoOpen"
@@ -148,10 +148,12 @@ function HeaderAndMenu() {
               </div>
             </Link>
 
-            <Link to="/" style={{ textDecoration: "none" }}>
+            <Link to="/Profile" style={{ textDecoration: "none" }}>
               <div
                 className={` ${
-                  location.pathname == "/" ? "menu-Item active" : "menu-Item"
+                  location.pathname == "/Notification"
+                    ? "menu-Item active"
+                    : "menu-Item"
                 }`}
               >
                 <img src={Notification} alt="" />
@@ -164,7 +166,9 @@ function HeaderAndMenu() {
             <Link to="/" style={{ textDecoration: "none" }}>
               <div
                 className={` ${
-                  location.pathname == "/" ? "menu-Item active" : "menu-Item"
+                  location.pathname == "/Settings"
+                    ? "menu-Item active"
+                    : "menu-Item"
                 }`}
               >
                 <img src={Setting} alt="" />

@@ -14,7 +14,7 @@ import menoOpen from "../assets/menoOpen.png";
 import { Link, Outlet, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import {  menuOpen, selectInfo } from "../Redux/reducer";
+import { menuOpen, selectInfo } from "../Redux/reducer";
 
 function HeaderAndMenu() {
   const location = useLocation();
@@ -236,7 +236,7 @@ function HeaderAndMenu() {
                 <div className="text-item"> Patients list</div>
               </div>
             </Link>
-            <Link to="/" style={{ textDecoration: "none" }}>
+            <Link to="/Messages" style={{ textDecoration: "none" }}>
               <div
                 className={` ${
                   location.pathname == "/Messages"
@@ -248,7 +248,7 @@ function HeaderAndMenu() {
                 <div className="text-item "> Messages</div>
               </div>
             </Link>
-            <Link to="" style={{ textDecoration: "none" }}>
+            <Link to="/Appointment" style={{ textDecoration: "none" }}>
               <div
                 className={` ${
                   location.pathname == "/Appointment"
@@ -260,10 +260,10 @@ function HeaderAndMenu() {
                 <div className="text-item"> Appointment</div>
               </div>
             </Link>
-            <Link to="" style={{ textDecoration: "none" }}>
+            <Link to="/MedicalHistory" style={{ textDecoration: "none" }}>
               <div
                 className={` ${
-                  location.pathname == "/Medical"
+                  location.pathname == "/MedicalHistory"
                     ? "menu-Item active"
                     : "menu-Item"
                 }`}

@@ -138,7 +138,7 @@ function HeaderAndMenu() {
             <Link to="/Profile" style={{ textDecoration: "none" }}>
               <div
                 className={` ${
-                  location.pathname == "/user"
+                  location.pathname == "/Profile"
                     ? "menu-Item  active"
                     : "menu-Item"
                 }`}

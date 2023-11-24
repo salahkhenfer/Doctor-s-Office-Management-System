@@ -144,7 +144,7 @@ function HeaderAndMenu() {
                 }`}
               >
                 <img className="Img-user" src={Avatar} alt="" />
-                <div className=" text-item "> 5Edit My Profile</div>
+                <div className=" text-item "> Edit My Profile</div>
               </div>
             </Link>
 

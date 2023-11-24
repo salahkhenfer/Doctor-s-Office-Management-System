@@ -822,7 +822,7 @@ time,
     background-color: white;
     top: 0;
     left: 0;
-
+    padding-bottom: 40px;
     height: fit-content;
   }
   .hide-of-medical {

@@ -491,7 +491,7 @@ time,
     border: 1px solid #dfe8f6;
     background: #fff;
     margin: 20px;
-    height: 100vh;
+    height: fit-content;
     position: relative;
     /* display: block; */
     top: 58px;
@@ -573,7 +573,7 @@ time,
 
   .calendar {
     width: 90%;
-    height: 53vh;
+    height: 365px;
     flex-shrink: 0;
     border-radius: 8.39px;
     border: 1px solid #dfe8f6;

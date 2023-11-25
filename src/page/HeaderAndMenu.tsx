@@ -107,10 +107,12 @@ function HeaderAndMenu() {
                   <div className="text-item "> Messages</div>
                 </div>
               </Link>
-              <Link to="/" style={{ textDecoration: "none" }}>
+              <Link to="/Appointment" style={{ textDecoration: "none" }}>
                 <div
                   className={` ${
-                    location.pathname == "/" ? "menu-Item active" : "menu-Item"
+                    location.pathname == "/Appointment"
+                      ? "menu-Item active"
+                      : "menu-Item"
                   }`}
                 >
                   <img src={Activity} alt="" />

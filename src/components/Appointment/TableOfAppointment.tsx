@@ -1,5 +1,5 @@
+import DocterTableDetils from "./DocterTableDetils";
 import TableTIme from "./TableTIme";
-import DocterTableDetils from "./docterTableDetils";
 
 function TableOfAppointment() {
   return (

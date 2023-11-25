@@ -41,6 +41,7 @@ function HeaderAndMenu() {
 
   return (
     <>
+      {/* when using desktop */}
       <div className="header-menu">
         <div className="header-menu-container">
           <div className="header">
@@ -140,6 +141,7 @@ function HeaderAndMenu() {
           </div>
         </div>
       </div>
+      {/* when using mobile */}
 
       <div className="header-phone">
         <div className="header-menu-container">

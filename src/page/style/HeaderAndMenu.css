@@ -227,11 +227,10 @@
     position: absolute;
     background-color: white;
     top: 0;
-    position: fixed;
 
     z-index: 99;
     width: 65%;
-    height: 100vh;
+    height: 100%;
     box-shadow: 1px 0 49px -9px #868686;
     left: 0;
     transition: 1s;

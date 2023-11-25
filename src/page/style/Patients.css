@@ -1,0 +1,223 @@
+.Patients {
+  margin: 20px 30px;
+}
+.PatientsTitle {
+  color: #192252;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.PatientsSearchButtons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 0px;
+}
+.PatientsSearch {
+  display: flex;
+  border-radius: 8px;
+  border: 1px solid #dfe8f6;
+  align-items: flex-start;
+  align-items: center;
+  gap: 10px;
+  width: fit-content;
+}
+.PatientsSearch img {
+  margin: auto;
+  padding-left: 10px;
+}
+.PatientsSearchInput {
+  width: 400px;
+  padding: 12px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  color: #848fac;
+}
+.PatientsSearchInput::placeholder {
+  color: #848fac;
+  text-align: justify;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1px;
+}
+.PatientsSearchButtonsRight {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.DownloadButton {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+  background: #eff3fa;
+  padding: 12px 24px;
+  cursor: pointer;
+}
+.DownloadButton img {
+  width: 20px;
+  height: 20px;
+  margin: 0 10px;
+}
+.DownloadButtonText {
+  color: #192252;
+  text-align: justify;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.5px;
+}
+.FilterButton {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+  background: #eff3fa;
+  padding: 12px 24px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+.FilterButton img {
+  width: 20px;
+  height: 20px;
+  margin: 0 10px;
+}
+.FilterButtonText {
+  color: #192252;
+  text-align: justify;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.5px;
+}
+
+/* ========== card ========= */
+.PatientsCard {
+  border-radius: 8px;
+  border: 1px solid #dfe8f6;
+  background: #fff;
+  width: 90%;
+  padding: 10px 15px;
+}
+.PatientsCard img {
+  width: 48px;
+  height: 48px;
+}
+.PatientsCardName {
+  color: #192252;
+  text-align: justify;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  margin-top: 20px;
+}
+.PatientsCardLocaion {
+  color: #848fac;
+  text-align: justify;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #dfe8f6;
+}
+.PatientsCardInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+  margin-bottom: 10px;
+}
+.PatientsCardInfoQu {
+  color: #848fac;
+  text-align: justify;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.5px;
+}
+.PatientsCardInfoAnswar {
+  color: #192252;
+  text-align: justify;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1px;
+}
+.PatientsCardButton {
+  border-radius: 8px;
+  background: #103f74;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto 0;
+  color: #fff;
+  padding: 12px 30px;
+  width: fit-content;
+}
+
+.PatientsContainerCard {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+  gap: 10px;
+}
+@media (max-width: 767px) {
+  .PatientsContainerCard {
+    grid-template-columns: 1fr;
+  }
+  .PatientsSearch {
+    /* display: flex; */
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #dfe8f6;
+    align-items: flex-start;
+    align-items: center;
+    gap: 10px;
+    /* width: 0%; */
+  }
+  .DownloadButtonText {
+    display: none;
+  }
+  .FilterButtonText {
+    display: none;
+  }
+  .FilterButton {
+    padding: 12px 4px;
+    margin-left: 10px;
+  }
+  .DownloadButton {
+    padding: 12px 4px;
+    margin-left: 10px;
+  }
+  .PatientsSearchInput {
+    /* width: 400px; */
+    width: 60%;
+    padding: 10px 0;
+  }
+  .PatientsSearchInput::placeholder {
+    font-size: 12px;
+  }
+  .PatientsSearch img {
+    margin: 0;
+    padding-left: 10px;
+  }
+}

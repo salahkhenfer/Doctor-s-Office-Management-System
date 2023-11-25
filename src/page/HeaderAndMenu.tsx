@@ -188,6 +188,7 @@ function HeaderAndMenu() {
 
             <Link to="/Profile" style={{ textDecoration: "none" }}>
               <div
+                onClick={handelMenu}
                 className={` ${
                   location.pathname == "/Notification"
                     ? "menu-Item active"
@@ -203,6 +204,7 @@ function HeaderAndMenu() {
             </Link>
             <Link to="/" style={{ textDecoration: "none" }}>
               <div
+                onClick={handelMenu}
                 className={` ${
                   location.pathname == "/Settings"
                     ? "menu-Item active"
@@ -217,6 +219,7 @@ function HeaderAndMenu() {
 
             <Link to="/" style={{ textDecoration: "none" }}>
               <div
+                onClick={handelMenu}
                 className={` ${
                   location.pathname == "/" ? "menu-Item active" : "menu-Item"
                 }`}
@@ -228,6 +231,7 @@ function HeaderAndMenu() {
 
             <Link to="/Patients" style={{ textDecoration: "none" }}>
               <div
+                onClick={handelMenu}
                 className={` ${
                   location.pathname == "/Patients"
                     ? "menu-Item active"
@@ -240,6 +244,7 @@ function HeaderAndMenu() {
             </Link>
             <Link to="/Messages" style={{ textDecoration: "none" }}>
               <div
+                onClick={handelMenu}
                 className={` ${
                   location.pathname == "/Messages"
                     ? "menu-Item active"
@@ -252,6 +257,7 @@ function HeaderAndMenu() {
             </Link>
             <Link to="/Appointment" style={{ textDecoration: "none" }}>
               <div
+                onClick={handelMenu}
                 className={` ${
                   location.pathname == "/Appointment"
                     ? "menu-Item active"
@@ -264,6 +270,7 @@ function HeaderAndMenu() {
             </Link>
             <Link to="/MedicalHistory" style={{ textDecoration: "none" }}>
               <div
+                onClick={handelMenu}
                 className={` ${
                   location.pathname == "/MedicalHistory"
                     ? "menu-Item active"

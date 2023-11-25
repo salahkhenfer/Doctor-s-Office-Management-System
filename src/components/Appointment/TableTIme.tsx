@@ -1,3 +1,6 @@
+import { useDispatch } from "react-redux";
+import { AppointmentDetailHandeler } from "../../Redux/reducer";
+
 function TableTime(props: {
   exist: boolean;
   borderLeft: string;
@@ -5,8 +8,15 @@ function TableTime(props: {
 }) {
   const shouldExist = props.exist !== undefined ? props.exist : false;
 
+  const dispach = useDispatch();
+
   return (
-    <div className="dr-table">
+    <div
+      onClick={() => {
+        dispach(AppointmentDetailHandeler());
+      }}
+      className="dr-table"
+    >
       {shouldExist && (
         <div
           className="CardOnTable"

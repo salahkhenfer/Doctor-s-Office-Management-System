@@ -6,6 +6,7 @@ export interface UserSliceState {
   location: string;
   menu: boolean;
   openDetils: boolean;
+  AppointmentDetail: boolean;
 }
 
 const initialState: UserSliceState = {
@@ -14,6 +15,7 @@ const initialState: UserSliceState = {
   location: "/",
   menu: false,
   openDetils: false,
+  AppointmentDetail: false,
 };
 
 export const userSlice = createSlice({
@@ -50,6 +52,9 @@ export const userSlice = createSlice({
     openDetilsHandeler: (state) => {
       state.openDetils = !state.openDetils;
     },
+    AppointmentDetailHandeler: (state) => {
+      state.AppointmentDetail = !state.AppointmentDetail;
+    },
   },
 });
 export const selectUser = (state: { info: UserSliceState }) => state.info;
@@ -67,6 +72,7 @@ export const {
   menuOpen,
   menuClose,
   openDetilsHandeler,
+  AppointmentDetailHandeler,
 } = userSlice.actions;
 
 export default userSlice.reducer;

@@ -1,6 +1,6 @@
 .Appointment {
   margin: 20px;
-  width: 100vw;
+  width: 100%;
 }
 
 .AppointmentsTitle {
@@ -58,9 +58,13 @@
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
-  background: #103f74;
   border-radius: 4px;
   cursor: pointer;
+
+  background-color: #103f74;
+  filter: grayscale(100%);
+
+  border: 1px solid #dfe8f6;
 }
 .AppointmentCalendar img {
   height: 24px;
@@ -79,6 +83,9 @@
   justify-content: space-between;
   align-items: center;
   flex-shrink: 0;
+}
+.acitveBackground {
+  background-color: antiquewhite;
 }
 .AppointmentDate-right {
   display: flex;

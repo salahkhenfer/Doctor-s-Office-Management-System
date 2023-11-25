@@ -243,13 +243,14 @@
   top: -70px;
   right: -15px;
   height: 150vh;
+  z-index: 10;
 }
 .hide-of-medical {
-  position: fixed;
+  position: absolute;
   width: 100vw;
   background-color: #0d0d0d;
-  right: 0px;
-  top: 0;
+  top: -70px;
+  right: -15px;
   height: 220vh;
   opacity: 0.1;
 }

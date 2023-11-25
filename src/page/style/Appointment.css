@@ -217,6 +217,93 @@
 .TableOfAppointmentPhone {
   display: none;
 }
+
+/* ========= Appointments Card ======== */
+.AppointmentsCard {
+  border-radius: 12px;
+  border: 1px solid #c5d0e6;
+  background: #fff;
+  width: 100%;
+  height: 100%;
+}
+.AppointmentsCardUserInfo {
+  margin: 20px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 5%;
+}
+.AppointmentsCardUserInfo img {
+  width: 65px;
+  height: 65px;
+}
+.AppointmentsCardUserInfoDetils {
+}
+.AppointmentsCardUserInfoName {
+  color: #192252;
+  text-align: justify;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.5px;
+}
+.AppointmentsCardUserInfoTime {
+  color: #848fac;
+  text-align: justify;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.5px;
+}
+.AppointmentsCardUserInfodec {
+  color: #848fac;
+  text-align: justify;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  margin: 20px;
+}
+.AppointmentsCardButtons {
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.AppointmentsCardButtonWhite {
+  border-radius: 8px;
+
+  border: 1px solid #c5d0e6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  color: #192252;
+
+  padding: 10px 20px;
+}
+.AppointmentsCardButtonBlue {
+  border-radius: 8px;
+  background: #103f74;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 30px;
+}
+.Appointment-container-card {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(48%, 1fr));
+  gap: 16px;
+}
+
 @media only screen and (max-width: 768px) {
   .AppointmentIcons {
     justify-content: space-between;
@@ -320,5 +407,27 @@
   }
   .TableOfAppointment-container {
     position: relative;
+  }
+
+  /* ========AppointmentsCard======== */
+
+  .AppointmentsCard {
+    border-radius: 12px;
+    border: 1px solid #c5d0e6;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+  }
+  .AppointmentsCardButtonBlue {
+    font-size: 10px;
+
+    padding: 10px 15px;
+  }
+  .AppointmentsCardButtonWhite {
+    font-size: 10px;
+    padding: 10px 15px;
+  }
+  .Appointment-container-card {
+    grid-template-columns: 1fr;
   }
 }

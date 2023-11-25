@@ -4,6 +4,7 @@ import arrwo from "./../assets/Arrow - Down.png";
 import calendar from "./../assets/Calendarblack.png";
 import more from "./../assets/more.png";
 import { useState } from "react";
+import AppointmentsCard from "../components/Appointment/AppointmentsCard";
 function Appointment() {
   const [whoOpen, setWhoOpen] = useState(true);
   const HandelOpenttrue = () => {
@@ -42,7 +43,17 @@ function Appointment() {
           </div>
         </div>
       </div>
-      {whoOpen ? <TableOfAppointment /> : ""}
+      {whoOpen ? (
+        <TableOfAppointment />
+      ) : (
+        <div className="Appointment-container-card">
+          <AppointmentsCard />
+          <AppointmentsCard />
+          <AppointmentsCard />
+          <AppointmentsCard />
+          <AppointmentsCard />
+        </div>
+      )}
     </div>
   );
 }

@@ -11,14 +11,12 @@ function TableTime(props: {
   const dispach = useDispatch();
 
   return (
-    <div
-      onClick={() => {
-        dispach(AppointmentDetailHandeler());
-      }}
-      className="dr-table"
-    >
+    <div className="dr-table">
       {shouldExist && (
         <div
+          onClick={() => {
+            dispach(AppointmentDetailHandeler());
+          }}
           className="CardOnTable"
           style={{ borderLeft: props.borderLeft, height: props.height }}
         >

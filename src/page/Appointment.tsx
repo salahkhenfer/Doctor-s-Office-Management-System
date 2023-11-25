@@ -12,11 +12,14 @@ function Appointment() {
           <div className="AppointmentDateText">Jan 16, 2023</div>
           <img src={arrwo} alt="" />
         </div>
-        <div className="AppointmentCalendar">
-          <img src={calendar} alt="" />
-        </div>
-        <div className="Appointmentmore">
-          <img src={more} alt="" />
+
+        <div className="AppointmentDate-right">
+          <div className="AppointmentCalendar">
+            <img src={calendar} alt="" />
+          </div>
+          <div className="Appointmentmore">
+            <img src={more} alt="" />
+          </div>
         </div>
       </div>
       <TableOfAppointment />

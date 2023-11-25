@@ -1,5 +1,6 @@
 .Appointment {
   margin: 20px;
+  width: 100vw;
 }
 
 .AppointmentsTitle {
@@ -75,11 +76,16 @@
   display: flex;
   width: 24px;
   height: 24px;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-shrink: 0;
 }
+.AppointmentDate-right {
+  display: flex;
 
+  justify-content: center;
+  align-items: center;
+}
 .TableOfAppointment {
   padding: 20px 10px;
 }
@@ -200,4 +206,112 @@
   font-weight: 400;
   line-height: 12px; /* 120% */
   opacity: 0.5;
+}
+.TableOfAppointmentPhone {
+  display: none;
+}
+@media only screen and (max-width: 768px) {
+  .AppointmentIcons {
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-right: 0px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .the-first-line-table .dr-table img {
+    display: none;
+  }
+  .the-first-line-table {
+    width: 90vw;
+  }
+  .Appointment {
+    width: 90vw;
+  }
+  .the-first-line-table .dr-table .dr-table-info {
+    display: none;
+  }
+  .dr-tablePhone {
+    color: #848fac;
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px; /* 133.333% */
+    opacity: 0.5;
+    text-transform: uppercase;
+  }
+  .all-day {
+    width: 13%;
+    border-right: 1px solid #c5d0e6;
+    padding-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #848fac;
+    font-family: Poppins;
+    font-size: 10px;
+    text-transform: uppercase;
+  }
+  .PST-time {
+    width: 13%;
+    border-right: 1px solid #c5d0e6;
+    padding-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #848fac;
+    font-family: Poppins;
+    font-size: 10px;
+  }
+  .Appointmentmore {
+    margin-left: 10px;
+  }
+
+  .TableOfAppointment {
+    display: none;
+  }
+  .TableOfAppointmentPhone {
+    display: block;
+    /* padding: 20px 10px; */
+    width: 80%;
+  }
+
+  .the-first-line-table .dr-table {
+    height: 50px;
+    width: 23%;
+    border-right: 1px solid #c5d0e6;
+    border-left: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .the-line-table {
+    border-bottom: 1px dashed #c2c2c2;
+    width: 90vw;
+  }
+  .the-line-table .dr-table {
+    height: 100px;
+    width: 23%;
+    border-left: 0;
+    position: relative;
+    border-right: 1px solid #c5d0e6;
+  }
+
+  .table-sep {
+    display: none;
+  }
+
+  .CardOnTable {
+    width: 100%;
+    height: 70%;
+    position: relative;
+    left: -14px;
+    background-color: #f3f4f6;
+    border-radius: 5px;
+    padding: 2px 0px 4px 8px;
+  }
+  .TableOfAppointment-container {
+    position: relative;
+  }
 }

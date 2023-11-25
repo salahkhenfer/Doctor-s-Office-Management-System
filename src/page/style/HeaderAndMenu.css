@@ -73,7 +73,7 @@
   padding-top: 20px;
   width: 20%;
   border-right: 1px solid #dfe8f6;
-
+  height: 100vh;
   transition: 100ms;
   opacity: 0;
   transform: translateX(-150%);
@@ -234,6 +234,7 @@
     box-shadow: 1px 0 49px -9px #868686;
     left: 0;
     transition: 1s;
+    height: fit-content;
   }
   .space {
     height: 10px;

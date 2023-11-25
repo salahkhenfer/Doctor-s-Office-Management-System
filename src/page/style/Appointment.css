@@ -187,6 +187,9 @@
   border: 1px dashed #c2c2c2;
   opacity: 0.5;
 }
+.dr-tablePhone {
+  display: none;
+}
 .CardOnTable {
   width: 100%;
   height: 50%;
@@ -326,6 +329,7 @@
     display: none;
   }
   .dr-tablePhone {
+    display: block;
     color: #848fac;
     font-family: Poppins;
     font-size: 12px;

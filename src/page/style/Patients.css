@@ -1,5 +1,7 @@
 .Patients {
   margin: 20px 30px;
+  height: fit-content;
+  padding-bottom: 20px;
 }
 .PatientsTitle {
   color: #192252;
@@ -173,12 +175,274 @@
   color: #fff;
   padding: 12px 30px;
   width: fit-content;
+  cursor: pointer;
 }
 
 .PatientsContainerCard {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
   gap: 10px;
+}
+
+/* ====PatientDetails===== */
+.PatientDetails {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.PatientDetailsLeft {
+  width: 30%;
+}
+.PatientDetailsRight {
+  width: 60%;
+}
+/* ====PatientDetailCard===== */
+.PatientDetailsCard {
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #dfe8f6;
+  background: #fff;
+  padding: 20px 30px;
+}
+.PatientDetailsCardImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.PatientDetailsCard img {
+  width: 100px;
+  height: 100px;
+}
+.PatientDetailsCardName {
+  margin: 20px 0 10px;
+  color: #192252;
+  text-align: justify;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.PatientDetailsCardID {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #848fac;
+  text-align: justify;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.PatientDetailsCardID span {
+  color: #192252;
+  text-align: justify;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.5px;
+
+  margin-left: 10px;
+}
+.PatientDetailsCardLoction {
+  color: #848fac;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+}
+.PatientDetailsCardNumber {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.PatientDetailsCardNumberPart {
+  margin: 20px 0;
+}
+.PatientDetailsCardNumberPart div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.PatientDetailsCardButton {
+  margin: 20px 0;
+  border-radius: 8px;
+  background: #103f74;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 10px;
+  color: #fff;
+}
+
+/* ===== PatientInformationCard === */
+.PatientInformationCard {
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #dfe8f6;
+  background: #fff;
+  padding: 30px;
+  margin: 10px 0;
+}
+.PatientInformationCardTitle {
+  color: #192252;
+  text-align: justify;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.5px;
+}
+.PatientInformationCardDetils {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+}
+.PatientInformationCardLeft {
+  color: #848fac;
+  text-align: justify;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.5px;
+}
+.PatientInformationCardRight {
+  color: #192252;
+  text-align: right;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.5px;
+}
+/* ========== PatientDetailsRight ========= */
+.PatientDetailsRightall {
+  border-radius: 8px;
+  border: 1px solid #dfe8f6;
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+}
+.PatientDetailsRightTitle {
+  margin-bottom: 30px;
+  color: #192252;
+  text-align: justify;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.09px;
+}
+
+.PatientDetailsRightBigContainer {
+  border-left: 2px dashed #c5d0e6;
+  padding-top: -30px;
+  margin-left: 20px;
+}
+.PatientDetailsRightSmallContainer {
+  padding-bottom: 20px;
+}
+.PatientDetailsRightDate {
+  color: #192252;
+
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.08px;
+  position: relative;
+  margin-left: 22px;
+}
+.PatientDetailsRightDate span {
+  color: #192252;
+  position: absolute;
+
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border: 4px solid #103f74;
+  top: 5px;
+  left: -30px;
+}
+.PatientDetailsRightConsultation {
+  border-radius: 8px;
+  background: #fafafa;
+  padding: 24px;
+  width: 80%;
+  margin-left: 50px;
+  margin-top: 20px;
+}
+.PatientDetailsRightConsultationTitle {
+  color: #192252;
+  text-align: justify;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.07px;
+}
+.PatientDetailsRightConsultationDec {
+  margin: 10px 0;
+  color: #848fac;
+  text-align: justify;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.07px;
+}
+.PatientDetailsRightConsultationOpacity {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+  margin-top: 20px;
+}
+.PatientDetailsRightConsultationOpacity div {
+  color: #848fac;
+  text-align: justify;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.07px;
+}
+.PatientDetailsRightConsultationNoOpacity {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.PatientDetailsRightConsultationNoOpacity div {
+  color: #192252;
+  text-align: justify;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.07px;
 }
 @media (max-width: 767px) {
   .PatientsContainerCard {
@@ -219,5 +483,28 @@
   .PatientsSearch img {
     margin: 0;
     padding-left: 10px;
+  }
+
+  /* PatientDetailsRight mobile */
+  .PatientDetailsRight {
+    display: none;
+  }
+  .PatientDetailsLeft {
+    width: 79vw;
+  }
+  .PatientDetailsCard {
+    width: 90%;
+    border-radius: 8px;
+    border: 1px solid #dfe8f6;
+    background: #fff;
+    padding: 20px 30px;
+  }
+  .PatientInformationCard {
+    width: 90%;
+    border-radius: 8px;
+    border: 1px solid #dfe8f6;
+    background: #fff;
+    padding: 30px;
+    margin: 10px 0;
   }
 }

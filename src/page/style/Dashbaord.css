@@ -242,11 +242,11 @@
   background-color: white;
   top: -70px;
   right: -15px;
-  height: 150vh;
+  height: fit-content;
   z-index: 10;
 }
 .hide-of-medical {
-  position: absolute;
+  position: fixed;
   width: 100vw;
   background-color: #0d0d0d;
   top: -70px;

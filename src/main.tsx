@@ -13,6 +13,7 @@ import EditPage from "./page/EditPage.tsx";
 import MedicalHistory from "./page/MedicalHistory.tsx";
 import Messages from "./page/Messages.tsx";
 import Appointment from "./page/Appointment.tsx";
+import PatientDetails from "./page/PatientDetails.tsx";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -46,6 +47,10 @@ const router = createBrowserRouter([
       {
         path: "/Appointment",
         element: <Appointment />,
+      },
+      {
+        path: "/PatientDetails",
+        element: <PatientDetails />,
       },
     ],
   },

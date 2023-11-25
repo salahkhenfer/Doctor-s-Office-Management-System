@@ -34,6 +34,10 @@ function Patients() {
         <PatientsCard />
         <PatientsCard />
         <PatientsCard />
+        <PatientsCard />
+        <PatientsCard />
+        <PatientsCard />
+        <PatientsCard />
       </div>
     </div>
   );

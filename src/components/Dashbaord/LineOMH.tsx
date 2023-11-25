@@ -25,6 +25,10 @@ function LineOMH(props: { Status: typeOfStatus; name: string }) {
       <div
         onClick={() => {
           dispach(openDetilsHandeler());
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+          });
         }}
         className="userLine  "
       >

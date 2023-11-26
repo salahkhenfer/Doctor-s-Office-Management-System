@@ -217,6 +217,7 @@
     width: 65%;
 
    height: fit-content;
+min-height: 100vh;
     left: -100%;
     transform: translateX(0%);
     opacity: 1;

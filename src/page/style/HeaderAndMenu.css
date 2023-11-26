@@ -232,7 +232,8 @@ min-height: 100vh;
 
     z-index: 99;
     width: 65%;
-    height: 100%;
+    height: fit-content;
+min-height: 100vh;
     box-shadow: 1px 0 49px -9px #868686;
     left: 0;
     transition: 1s;

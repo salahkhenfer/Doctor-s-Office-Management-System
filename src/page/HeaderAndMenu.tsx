@@ -26,9 +26,9 @@ function HeaderAndMenu() {
   const lastSegment: string = newPathname[newPathname.length - 1];
 
   useEffect(() => {
-    if (location.pathname == "/") {
+    if (location.pathname == "/App") {
       setTitle("Dashbaord");
-    } else if (location.pathname === "/Profile/EditPage") {
+    } else if (location.pathname === "App/Profile/EditPage") {
       setTitle("Edit Profile");
     } else {
       setTitle(lastSegment);

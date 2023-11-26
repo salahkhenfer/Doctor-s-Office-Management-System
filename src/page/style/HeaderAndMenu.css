@@ -216,8 +216,8 @@
     z-index: 99;
     width: 65%;
 
-   height: fit-content;
-min-height: 100vh;
+    height: fit-content;
+    min-height: 100vh;
     left: -100%;
     transform: translateX(0%);
     opacity: 1;
@@ -233,11 +233,11 @@ min-height: 100vh;
     z-index: 99;
     width: 65%;
     height: fit-content;
-min-height: 100vh;
+    min-height: 100vh;
     box-shadow: 1px 0 49px -9px #868686;
     left: 0;
     transition: 1s;
-    height: fit-content;
+    height: 100%;
   }
   .space {
     height: 10px;

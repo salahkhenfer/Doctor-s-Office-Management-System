@@ -158,7 +158,7 @@ function HeaderAndMenu() {
             </div>
           </div>
 
-          <div className={`${openMenu ? "menu" : "menu-open"}`}>
+          <div className={`${!openMenu ? "menu" : "menu-open"}`}>
             <div className="logoMenu">
               <img
                 className="menoOpen"

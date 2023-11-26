@@ -13,11 +13,12 @@ import EditPage from "./page/EditPage.tsx";
 import MedicalHistory from "./page/MedicalHistory.tsx";
 import Messages from "./page/Messages.tsx";
 import Appointment from "./page/Appointment.tsx";
-import PatientDetails from "./page/PatientDetails.tsx";
+import LoginOrSginin from "./page/LoginOrSignup.tsx";
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/App",
     element: <App />,
+
     children: [
       {
         index: true,
@@ -25,34 +26,35 @@ const router = createBrowserRouter([
         element: <Dashbaord />,
       },
       {
-        path: "/Patients",
+        path: "/App/Patients",
         element: <Patients />,
       },
       {
-        path: "/Profile",
+        path: "/App/App/Profile",
         element: <Profile />,
       },
       {
-        path: "/Profile/EditPage",
+        path: "/App/Profile/EditPage",
         element: <EditPage />,
       },
       {
-        path: "/MedicalHistory",
+        path: "/App/MedicalHistory",
         element: <MedicalHistory />,
       },
       {
-        path: "/Messages",
+        path: "/App/Messages",
         element: <Messages />,
       },
       {
-        path: "/Appointment",
+        path: "/App/Appointment",
         element: <Appointment />,
       },
-      {
-        path: "/PatientDetails",
-        element: <PatientDetails />,
-      },
     ],
+  },
+  {
+    // index: true,
+    path: "/",
+    element: <LoginOrSginin />,
   },
 ]);
 ReactDOM.createRoot(document.getElementById("root")!).render(

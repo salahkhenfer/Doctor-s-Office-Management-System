@@ -3,8 +3,12 @@ import { FaGoogle } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
 import { useDispatch } from "react-redux";
 import { ForgetPassword, SignUp } from "../../Redux/reducer";
+import { useNavigate } from "react-router-dom";
 function Login() {
+  const Nav = useNavigate();
+
   const dispatch = useDispatch();
+
   return (
     <div className="ContainerForm">
       <div className="loginForm">
@@ -43,7 +47,9 @@ function Login() {
             Forget password
           </div>
         </div>
-        <button className="button-signup">Sign Up</button>
+        <button className="button-signup" onClick={() => Nav("/App")}>
+          Login
+        </button>
         <div className="or">or</div>
         <button className="SinInButton">
           <FaGoogle className="sinIn-icon" /> <div>Sign Up with google</div>

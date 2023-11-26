@@ -31,7 +31,7 @@ const router = createBrowserRouter([
         element: <Patients />,
       },
       {
-        path: "/App/App/Profile",
+        path: "/App/Profile",
         element: <Profile />,
       },
       {

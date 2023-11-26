@@ -61,7 +61,7 @@ function EditPage() {
           </div>
         </Link>
 
-        <Link to="/Profile" style={{ textDecoration: "none" }}>
+        <Link to="/App/Profile" style={{ textDecoration: "none" }}>
           <div onClick={handelarChange} className="Change-photo">
             Save Changes
           </div>

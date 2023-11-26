@@ -216,7 +216,7 @@
     z-index: 99;
     width: 65%;
 min-height:100vh;
-    height: 100%;
+   height: fit-content
     left: -100%;
     transform: translateX(0%);
     opacity: 1;

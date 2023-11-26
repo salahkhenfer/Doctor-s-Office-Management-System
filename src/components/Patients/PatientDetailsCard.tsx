@@ -25,7 +25,7 @@ function PatientDetailsCard() {
           <div>Appointment</div>
         </div>
       </div>
-      <Link to="/Messages" style={{ textDecoration: "none" }}>
+      <Link to="/App/Messages" style={{ textDecoration: "none" }}>
         <div className="PatientDetailsCardButton">Message patient</div>
       </Link>
     </div>

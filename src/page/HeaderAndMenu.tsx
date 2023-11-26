@@ -45,7 +45,7 @@ function HeaderAndMenu() {
       <div className="header-menu">
         <div className="header-menu-container">
           <div className="header">
-            <Link to="/" style={{ textDecoration: "none" }}>
+            <Link to="/App" style={{ textDecoration: "none" }}>
               <div
                 onClick={() => {
                   dispatch(menuOpen());
@@ -62,7 +62,7 @@ function HeaderAndMenu() {
             <div className="header-user">
               <img className="Notification" src={Notification} alt="" />
               <img className="Setting" src={Setting} alt="" />
-              <Link to="/Profile">
+              <Link to="/App/Profile">
                 <img
                   onClick={() => dispatch(menuOpen())}
                   className="Avatar"
@@ -74,20 +74,22 @@ function HeaderAndMenu() {
           </div>
           <div className="After-header">
             <div className={`${Info.menu ? "menu" : " menu menu-close"}`}>
-              <Link to="/" style={{ textDecoration: "none" }}>
+              <Link to="/App" style={{ textDecoration: "none" }}>
                 <div
                   className={` ${
-                    location.pathname == "/" ? "menu-Item active" : "menu-Item"
+                    location.pathname == "/App"
+                      ? "menu-Item active"
+                      : "menu-Item"
                   }`}
                 >
                   <img src={dashboard} alt="" />
                   <div className=" text-item "> Dashboard</div>
                 </div>
               </Link>
-              <Link to="/Patients" style={{ textDecoration: "none" }}>
+              <Link to="/App/Patients" style={{ textDecoration: "none" }}>
                 <div
                   className={` ${
-                    location.pathname == "/Patients"
+                    location.pathname == "/App/Patients"
                       ? "menu-Item active"
                       : "menu-Item"
                   }`}
@@ -96,10 +98,10 @@ function HeaderAndMenu() {
                   <div className="text-item"> Patients list</div>
                 </div>
               </Link>
-              <Link to="/Messages" style={{ textDecoration: "none" }}>
+              <Link to="/App/Messages" style={{ textDecoration: "none" }}>
                 <div
                   className={` ${
-                    location.pathname == "/Messages"
+                    location.pathname == "/App/Messages"
                       ? "menu-Item active"
                       : "menu-Item"
                   }`}
@@ -108,10 +110,10 @@ function HeaderAndMenu() {
                   <div className="text-item "> Messages</div>
                 </div>
               </Link>
-              <Link to="/Appointment" style={{ textDecoration: "none" }}>
+              <Link to="/App/Appointment" style={{ textDecoration: "none" }}>
                 <div
                   className={` ${
-                    location.pathname == "/Appointment"
+                    location.pathname == "/App/Appointment"
                       ? "menu-Item active"
                       : "menu-Item"
                   }`}
@@ -120,16 +122,25 @@ function HeaderAndMenu() {
                   <div className="text-item"> Appointment</div>
                 </div>
               </Link>
-              <Link to="/MedicalHistory" style={{ textDecoration: "none" }}>
+              <Link to="/App/MedicalHistory" style={{ textDecoration: "none" }}>
                 <div
                   className={` ${
-                    location.pathname == "/MedicalHistory"
+                    location.pathname == "/App/MedicalHistory"
                       ? "menu-Item active"
                       : "menu-Item"
                   }`}
                 >
                   <img src={Calendar} alt="" />
                   <div className="text-item"> Medical History </div>
+                </div>
+              </Link>
+              <Link to="/" style={{ textDecoration: "none" }}>
+                <div
+                  className={` ${
+                    location.pathname == "/" ? "menu-Item active" : "menu-Item"
+                  }`}
+                >
+                  <div className="text-item"> LogOut </div>
                 </div>
               </Link>
             </div>
@@ -174,11 +185,11 @@ function HeaderAndMenu() {
               </div>
             </div>
 
-            <Link to="/Profile" style={{ textDecoration: "none" }}>
+            <Link to="/App/Profile" style={{ textDecoration: "none" }}>
               <div
                 onClick={handelMenu}
                 className={` ${
-                  location.pathname == "/Profile"
+                  location.pathname == "/App/Profile"
                     ? "menu-Item  active"
                     : "menu-Item"
                 }`}
@@ -188,11 +199,11 @@ function HeaderAndMenu() {
               </div>
             </Link>
 
-            <Link to="/Profile" style={{ textDecoration: "none" }}>
+            <Link to="/App/Profile" style={{ textDecoration: "none" }}>
               <div
                 onClick={handelMenu}
                 className={` ${
-                  location.pathname == "/Notification"
+                  location.pathname == "/App/Notification"
                     ? "menu-Item active"
                     : "menu-Item"
                 }`}
@@ -204,11 +215,11 @@ function HeaderAndMenu() {
                 </div>
               </div>
             </Link>
-            <Link to="/" style={{ textDecoration: "none" }}>
+            <Link to="/App" style={{ textDecoration: "none" }}>
               <div
                 onClick={handelMenu}
                 className={` ${
-                  location.pathname == "/Settings"
+                  location.pathname == "/App/Settings"
                     ? "menu-Item active"
                     : "menu-Item"
                 }`}
@@ -219,7 +230,7 @@ function HeaderAndMenu() {
             </Link>
             <div className="space"></div>
 
-            <Link to="/" style={{ textDecoration: "none" }}>
+            <Link to="/App" style={{ textDecoration: "none" }}>
               <div
                 onClick={handelMenu}
                 className={` ${
@@ -231,11 +242,11 @@ function HeaderAndMenu() {
               </div>
             </Link>
 
-            <Link to="/Patients" style={{ textDecoration: "none" }}>
+            <Link to="/App/Patients" style={{ textDecoration: "none" }}>
               <div
                 onClick={handelMenu}
                 className={` ${
-                  location.pathname == "/Patients"
+                  location.pathname == "/App/Patients"
                     ? "menu-Item active"
                     : "menu-Item"
                 }`}
@@ -244,11 +255,11 @@ function HeaderAndMenu() {
                 <div className="text-item"> Patients list</div>
               </div>
             </Link>
-            <Link to="/Messages" style={{ textDecoration: "none" }}>
+            <Link to="/App/Messages" style={{ textDecoration: "none" }}>
               <div
                 onClick={handelMenu}
                 className={` ${
-                  location.pathname == "/Messages"
+                  location.pathname == "/App/Messages"
                     ? "menu-Item active"
                     : "menu-Item"
                 }`}
@@ -257,11 +268,11 @@ function HeaderAndMenu() {
                 <div className="text-item "> Messages</div>
               </div>
             </Link>
-            <Link to="/Appointment" style={{ textDecoration: "none" }}>
+            <Link to="/App/Appointment" style={{ textDecoration: "none" }}>
               <div
                 onClick={handelMenu}
                 className={` ${
-                  location.pathname == "/Appointment"
+                  location.pathname == "/App/Appointment"
                     ? "menu-Item active"
                     : "menu-Item"
                 }`}
@@ -270,17 +281,27 @@ function HeaderAndMenu() {
                 <div className="text-item"> Appointment</div>
               </div>
             </Link>
-            <Link to="/MedicalHistory" style={{ textDecoration: "none" }}>
+            <Link to="/App/MedicalHistory" style={{ textDecoration: "none" }}>
               <div
                 onClick={handelMenu}
                 className={` ${
-                  location.pathname == "/MedicalHistory"
+                  location.pathname == "/App/MedicalHistory"
                     ? "menu-Item active"
                     : "menu-Item"
                 }`}
               >
                 <img src={Calendar} alt="" />
                 <div className="text-item"> Medical History </div>
+              </div>
+            </Link>
+            <Link to="/" style={{ textDecoration: "none" }}>
+              <div
+                onClick={handelMenu}
+                className={` ${
+                  location.pathname == "/" ? "menu-Item active" : "menu-Item"
+                }`}
+              >
+                <div className="text-item"> Logout </div>
               </div>
             </Link>
           </div>

@@ -14,6 +14,7 @@ import MedicalHistory from "./page/MedicalHistory.tsx";
 import Messages from "./page/Messages.tsx";
 import Appointment from "./page/Appointment.tsx";
 import LoginOrSginin from "./page/LoginOrSignup.tsx";
+import PatientDetails from "./page/PatientDetails.tsx";
 const router = createBrowserRouter([
   {
     path: "/App",
@@ -48,6 +49,11 @@ const router = createBrowserRouter([
       {
         path: "/App/Appointment",
         element: <Appointment />,
+      },
+
+      {
+        path: "/App/PatientDetails",
+        element: <PatientDetails />,
       },
     ],
   },

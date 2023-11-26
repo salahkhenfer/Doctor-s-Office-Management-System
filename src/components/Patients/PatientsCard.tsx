@@ -36,7 +36,7 @@ function PatientsCard() {
       </div>
       <Link
         style={{ textDecoration: "none" }}
-        to="/PatientDetails"
+        to="/App/PatientDetails"
         state={patientData}
         className="PatientsCardButton"
       >

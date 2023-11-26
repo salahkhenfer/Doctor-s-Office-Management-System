@@ -12,6 +12,9 @@ body {
   font-family: Poppins;
   color: black;
   position: relative;
+  
+    font-family: "Poppins", sans-serif;
+
 }
 * {
   margin: 0;

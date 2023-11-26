@@ -215,14 +215,13 @@
 
     z-index: 99;
     width: 65%;
-min-height:100vh;
+
    height: fit-content
     left: -100%;
     transform: translateX(0%);
     opacity: 1;
     transition: 1s;
-
-display:none;  }
+  }
 
   .menu-open {
     padding: 10px 0;

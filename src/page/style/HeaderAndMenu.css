@@ -228,7 +228,7 @@ min-height:100vh;
     position: absolute;
     background-color: white;
     top: 0;
-
+display:none;
     z-index: 99;
     width: 65%;
     height: 100%;

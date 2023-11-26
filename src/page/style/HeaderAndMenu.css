@@ -215,7 +215,8 @@
 
     z-index: 99;
     width: 65%;
-    height: 100vh;
+min-height:100vh;
+    height: 100%;
     left: -100%;
     transform: translateX(0%);
     opacity: 1;

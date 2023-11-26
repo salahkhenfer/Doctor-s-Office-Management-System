@@ -36,7 +36,7 @@ function Profile() {
               <div className="loction-text">Alger, Algeria</div>
             </div>
           </div>
-          <Link to="/Profile/EditPage" style={{ textDecoration: "none" }}>
+          <Link to="/App/Profile/EditPage" style={{ textDecoration: "none" }}>
             <div
               onClick={() => dispatch(menuHandeler())}
               className="edit-button"

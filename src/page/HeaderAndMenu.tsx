@@ -74,7 +74,7 @@ function HeaderAndMenu() {
           </div>
           <div className="After-header">
             <div className={`${Info.menu ? "menu" : " menu menu-close"}`}>
-              <Link to="/App" style={{ textDecoration: "none" }}>
+              <Link to="/App/Profile" style={{ textDecoration: "none" }}>
                 <div
                   className={` ${
                     location.pathname == "/App"

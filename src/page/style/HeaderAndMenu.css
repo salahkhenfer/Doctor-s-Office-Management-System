@@ -221,14 +221,15 @@ min-height:100vh;
     transform: translateX(0%);
     opacity: 1;
     transition: 1s;
-  }
+
+display:none;  }
 
   .menu-open {
     padding: 10px 0;
     position: absolute;
     background-color: white;
     top: 0;
-display:none;
+
     z-index: 99;
     width: 65%;
     height: 100%;

@@ -215,7 +215,7 @@ function HeaderAndMenu() {
                 </div>
               </div>
             </Link>
-            <Link to="/App" style={{ textDecoration: "none" }}>
+            <Link to="/App/Dashboard" style={{ textDecoration: "none" }}>
               <div
                 onClick={handelMenu}
                 className={` ${
